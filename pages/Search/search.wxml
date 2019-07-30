@@ -38,23 +38,9 @@
     </view>
   </view>
 
-<!-- Need back-end's data for this -->
-  <!-- <view class="rental-items" wx:for="{{rental-items.length}}" wx:for-index="id">
-    <view data-id="{{item}}" class="rental-item-box" bindtap="goToShow">
-      <view class="rental-item-image-box">
-        <image class="rental-item-image" src=""></image>
-      </view>
-      <view class="rental-item-text">
-        <view class="rental-item-name-and-description">
-          <text class="h2">{{item.name}}</text>
-          <text class="p">{{item.description}}</text>
-        </view>
-        <view class="rental-item-distance">
-          <text class="p">{{item.distance}}</text>
-        </view>
-      </view>
-    </view>
-  </view> -->
+
+
+
   
   <!-- Add bindtaps -->
   
