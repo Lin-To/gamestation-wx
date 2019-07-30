@@ -49,6 +49,7 @@
 		},
 		"miniprogram": {
 			"current": 3,
+
 			"list": [
 				{
 					"id": -1,
@@ -75,6 +76,7 @@
 					"id": -1,
 					"name": "pages/market/market",
 					"pathName": "pages/market/market",
+
 					"query": "",
 					"scene": null
 				}
