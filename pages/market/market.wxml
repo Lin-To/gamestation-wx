@@ -1,0 +1,71 @@
+<!--pages/home/home.wxml-->
+<!-- Change searchbox text (and maybe add bindtap to search icon) and location text dynamically -->
+<view class="navbar">
+  <view class="search-box-container">
+    <view class="search-box">
+      <view class="search-icon-box">
+        <image class="search-icon" src="https://image.flaticon.com/icons/svg/751/751463.svg"></image>
+      </view>
+      <view class="search-text-box">
+        <text class="search-text">Searchbox text</text>
+      </view>
+    </view>
+  </view>
+  <view class="location-container">
+    <view class="location-icon-box">
+      <image class="location-icon" src="https://www.pngkey.com/png/full/506-5065152_edit-location-card-location-icon-in-white-colour.png"></image>
+      <text>\n</text>
+      <text class="location-text">上海</text>
+    </view>
+  </view>
+</view>
+
+<view class="page-content">
+  <!-- Add checkbox button filters for these -->
+  <view class="filter-tabs">
+    <view class="filter-tab">
+      <text class="p">Console</text>
+    </view>
+    <view class="filter-tab">
+      <text class="p">Game</text>
+    </view>
+    <view class="filter-tab">
+      <text class="p">Date</text>
+    </view>
+    <view class="filter-tab">
+      <text class="p">Distance</text>
+    </view>
+  </view>
+
+<!-- Need back-end's data for this -->
+  <!-- <view class="rental-items" wx:for="{{rental-items.length}}" wx:for-index="id">
+    <view data-id="{{item}}" class="rental-item-box" bindtap="goToShow">
+      <view class="rental-item-image-box">
+        <image class="rental-item-image" src=""></image>
+      </view>
+      <view class="rental-item-text">
+        <view class="rental-item-name-and-description">
+          <text class="h2">{{item.name}}</text>
+          <text class="p">{{item.description}}</text>
+        </view>
+        <view class="rental-item-distance">
+          <text class="p">{{item.distance}}</text>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  
+  <!-- Add bindtaps -->
+  
+  <view class="tabs">
+    <view class="game-icon-box">
+      <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
+    </view>
+    <view class="profile-icon-box">
+      <image class="profile-icon" src="https://palletshifter.com/images/icons/profile.png"></image>
+      <text>\n</text>
+      <text class="p">Profile</text>
+    </view>
+  </view>
+  
+</view>

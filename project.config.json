@@ -4,13 +4,21 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
 		"autoAudits": false,
-		"coverView": true
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.7",
@@ -40,7 +48,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 3,
+
 			"list": [
 				{
 					"id": -1,
@@ -51,8 +60,23 @@
 				},
 				{
 					"id": 1,
-					"name": "we ui ",
-					"pathName": "/weui-wxss/dist/example/index",
+					"name": "pages/market/market",
+					"pathName": "pages/market/market",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/market/market",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/market/market",
+					"pathName": "pages/market/market",
+
 					"query": "",
 					"scene": null
 				}
