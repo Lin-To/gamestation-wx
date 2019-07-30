@@ -19,17 +19,8 @@
     </view>
   </view>
 </view>
+
 <view class="page-content">
-  <!-- Change images to dynamic ones from database later -->
-  <view class="sliding-images">
-    <swiper indicator-dots="{{indicatorDots}}" indicator-color="#808080" indicator-color-active="#FFFFFF" class="slider">
-      <block wx:for="{{imgUrls}}">
-        <swiper-item class="swipe-block">
-          <image src="{{item}}" class="sliding-image"/>
-        </swiper-item>
-      </block>
-    </swiper>
-  </view>
   <!-- Add checkbox button filters for these -->
   <view class="filter-tabs">
     <view class="filter-tab">

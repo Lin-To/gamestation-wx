@@ -1,3 +1,4 @@
+/* Navigation */
 .navbar {
   display: flex;
   background-color: #0D1420;
@@ -63,6 +64,8 @@
   font-size: 16px;
   color: white;
 }
+
+/* Page content (body) */
 .page-content {
   margin-top: 11vh;
   background-color: #0D1420;
@@ -127,3 +130,5 @@
   color: white;
   font-size: 12px;
 }
+
+/* card */
