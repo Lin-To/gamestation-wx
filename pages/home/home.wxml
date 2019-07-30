@@ -22,7 +22,7 @@
 <view class="page-content">
   <!-- Change images to dynamic ones from database later -->
   <view class="sliding-images">
-    <swiper indicator-dots="{{indicatorDots}}" indicator-color="#808080" indicator-color-active="#FFFFFF" class="slider">
+    <swiper indicator-dots="{{indicatorDots}}" indicator-color="#808080" indicator-color-active="#7C4242" class="slider">
       <block wx:for="{{imgUrls}}">
         <swiper-item class="swipe-block">
           <image src="{{item}}" class="sliding-image"/>
@@ -63,9 +63,43 @@
       </view>
     </view>
   </view> -->
-  
+<!-- 
+  <view class="card">
+    <view class="image">
+      <image class="item-image" src="https://images.unsplash.com/photo-1559984859-d568d6eeba0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></image>
+    </view>
+    <view class="item-text">
+      <view class="name-and-details-box">
+        <text class="name">Product Name\n</text>
+        <text class="details">Product description with relevant info only</text>
+      </view>
+      <view class="distance-box">
+        <text class="distance">Distance</text>
+      </view>
+    </view>
+  </view> -->
+
+<view class="cards-container">
+  <view class="card-product">
+    <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <view class="card-product-infos">
+      <text class="card-h2">Product name</text>
+      <text class="card-p">Product description with relevant info only.</text>
+    </view>
+  </view>
+
+<view class="card-product">
+  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <view class="card-product-infos">
+    <text class="card-h2">Product name</text>
+    <text class="card-p">Product description with relevant info only.</text>
+  </view>
+</view>
+</view>
+
   <!-- Add bindtaps -->
-  
+</view>
+<view class="footer">
   <view class="tabs">
     <view class="game-icon-box">
       <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
@@ -76,5 +110,4 @@
       <text class="p">Profile</text>
     </view>
   </view>
-  
 </view>
