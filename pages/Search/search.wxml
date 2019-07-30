@@ -19,8 +19,9 @@
     </view>
   </view>
 </view>
-
 <view class="page-content">
+  <!-- Change images to dynamic ones from database later -->
+
   <!-- Add checkbox button filters for these -->
   <view class="filter-tabs">
     <view class="filter-tab">

@@ -48,8 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
-
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -66,9 +65,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/market/market",
-					"pathName": "pages/index/index",
+					"id": 2,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
 					"query": "",
 					"scene": null
 				},
@@ -76,7 +75,6 @@
 					"id": -1,
 					"name": "pages/market/market",
 					"pathName": "pages/market/market",
-
 					"query": "",
 					"scene": null
 				}
