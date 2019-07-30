@@ -27,7 +27,7 @@
       <text class="p">Console</text>
     </view>
     <view class="filter-tab">
-      <text class="p">Game</text>
+      <text class="p">Games</text>
     </view>
     <view class="filter-tab">
       <text class="p">Date</text>
@@ -54,9 +54,9 @@
       </view>
     </view>
   </view> -->
-  
+
   <!-- Add bindtaps -->
-  
+
   <view class="tabs">
     <view class="game-icon-box">
       <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
@@ -67,5 +67,5 @@
       <text class="p">Profile</text>
     </view>
   </view>
-  
+
 </view>

@@ -49,10 +49,9 @@
 		},
 		"miniprogram": {
 			"current": 3,
-
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "Home Page",
 					"pathName": "pages/home/home",
 					"query": "",
@@ -73,10 +72,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/market/market",
-					"pathName": "pages/market/market",
-
+					"id": 3,
+					"name": "Search",
+					"pathName": "pages/search/search",
 					"query": "",
 					"scene": null
 				}
