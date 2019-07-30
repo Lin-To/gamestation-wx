@@ -58,13 +58,6 @@
 					"scene": null
 				},
 				{
-					"id": 1,
-					"name": "pages/market/market",
-					"pathName": "pages/market/market",
-					"query": "",
-					"scene": null
-				},
-				{
 					"id": 2,
 					"name": "pages/search/search",
 					"pathName": "pages/search/search",
@@ -73,8 +66,8 @@
 				},
 				{
 					"id": -1,
-					"name": "pages/market/market",
-					"pathName": "pages/market/market",
+					"name": "pages/request/request",
+					"pathName": "pages/request/request",
 					"query": "",
 					"scene": null
 				}
