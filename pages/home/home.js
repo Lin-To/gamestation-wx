@@ -19,7 +19,8 @@ Page({
     let page = this
 
     wx.request({
-      url: 'http://localhost:3000/api/v1/games',
+      // url: 'http://localhost:3000/api/v1/games',
+      url: 'https://gamestation.herokuapp.com/api/v1/games',
       success: function (res) {
         console.log(res)
         page.setData({ games: res.data.games })
