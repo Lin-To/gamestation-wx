@@ -1,18 +1,41 @@
 // pages/market/market.js
+let app = getApp()
+
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    imgUrls: ["https://images.unsplash.com/photo-1559984859-d568d6eeba0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"]
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    // fecth id of selected game from global data
+    // set it to a variable
+    // interpolate it at the end of the url
+    
+    let page = this
+    let gameId = options.gameId
+    // let game_id = app.globalData.id
+    // console.log("id", game_id)
+    wx.request({
+      url: `https://gamestation.herokuapp.com/api/v1/games/${gameId}`,
+      success: function (res) {
+        console.log("res", res)
+        const game_name = res.data.name;
+        // console.log("game name",game_name)
+        const game_description = res.data.description;
+        page.setData({
+           game_name: game_name,
+          game_description: game_description
+           });
+        wx.hideToast();
+      }
+    })
   },
 
   /**
@@ -64,3 +87,5 @@ Page({
 
   }
 })
+
+

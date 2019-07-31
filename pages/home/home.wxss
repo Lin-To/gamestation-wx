@@ -8,6 +8,7 @@
   width: 100%;
   height: 11vh;
   z-index: 2;
+
 }
 
 /* Search */

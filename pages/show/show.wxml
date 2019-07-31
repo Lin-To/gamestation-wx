@@ -1,0 +1,47 @@
+<view class = "page">
+
+<view class="slider-container">
+<view class="sliding-images">
+    <swiper indicator-dots="{{indicatorDots}}" indicator-color="#808080" indicator-color-active="#7C4242" class="slider">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item class="swipe-block">
+          <image src="{{item}}" class="sliding-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+</view>
+
+<view class="card-product">
+  <view class="image-container">
+    <image class="avatar-large" alt="avatar-large" src="https://images.unsplash.com/photo-1559984859-d568d6eeba0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></image>
+  </view>
+  <view class="card-product-infos">
+    <view class="name">
+      <text class="h2"></text>
+    </view>
+    <text class="p"></text>
+  </view>
+</view>
+
+<view class="description-box">
+  <view class="title">
+    <text class="h2">{{game_name}}</text>
+  </view>
+  <text class="p">{{game_description}}</text>
+</view>
+
+<view class="footer">
+  <view class="tabs">
+    <view class="game-icon-box">
+      <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
+    </view>
+    <view class="profile-icon-box">
+      <image class="profile-icon" src="https://palletshifter.com/images/icons/profile.png"></image>
+      <text>\n</text>
+      <text class="p">Profile</text>
+    </view>
+  </view>
+</view>
+
+</view>

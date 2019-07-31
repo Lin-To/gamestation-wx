@@ -1,3 +1,5 @@
+let app = getApp()
+
 // pages/home/home.js
 Page({
   /**
@@ -18,6 +20,8 @@ Page({
    */
   onLoad: function (options) {
     let page = this
+    // let name = app.globalData.name
+   
 
     wx.request({
       // url: 'http://localhost:3000/api/v1/games',
@@ -26,8 +30,7 @@ Page({
         console.log(res)
         page.setData({ games: res.data.games })
       }
-    })
-
+    }) 
   },
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -67,26 +70,17 @@ Page({
   },
 
   goToShow: function (event) {
+    console.log(22, event)
     let id = event.currentTarget.dataset.id
+    // let global_id = app.globalData.id
+    // set.app.globalData({
+    //   global_id: id
+    // })
+    // console.log("This is the ID",id)
+    // save id to global data - then you navigate to page
     wx.navigateTo({
-      url: `/pages/show/show`,
+      url: `/pages/show/show?gameId=${id}`
+
     })
   },
 })
-// goToProfile: function() {
-//   wx.switchTab({
-//     url: '/pages/profile/profile',
-//     wx: wx.showToast({
-//     title: 'Success!',
-//     })
-//   })
-// ),
-
-//   goToHome: function() {
-//     wx.switchTab({
-//       url: '/pages/home/home',
-//       wx: wx.showToast({
-//         title: 'Success!',
-//       })
-//     })
-// ),

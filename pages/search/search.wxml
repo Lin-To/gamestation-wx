@@ -1,2 +1,59 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+
+<!--pages/home/home.wxml-->
+<!-- Change searchbox text (and maybe add bindtap to search icon) and location text dynamically -->
+<view class="navbar">
+  <view class="search-box-container">
+    <view class="search-box">
+      <view class="search-icon-box">
+        <image class="search-icon" src="https://image.flaticon.com/icons/svg/751/751463.svg"></image>
+      </view>
+      <view class="search-text-box">
+        <text class="search-text">Searchbox text</text>
+      </view>
+    </view>
+  </view>
+  <view class="location-container">
+    <view class="location-icon-box">
+      <image class="location-icon" src="https://www.pngkey.com/png/full/506-5065152_edit-location-card-location-icon-in-white-colour.png"></image>
+      <text>\n</text>
+      <text class="location-text">上海</text>
+    </view>
+  </view>
+</view>
+<view class="page-content">
+  <!-- Change images to dynamic ones from database later -->
+
+  <!-- Add checkbox button filters for these -->
+  <view class="filter-tabs">
+    <view class="filter-tab">
+      <text class="p">Console</text>
+    </view>
+    <view class="filter-tab">
+      <text class="p">Game</text>
+    </view>
+    <view class="filter-tab">
+      <text class="p">Date</text>
+    </view>
+    <view class="filter-tab">
+      <text class="p">Distance</text>
+    </view>
+  </view>
+
+
+
+
+  
+  <!-- Add bindtaps -->
+  
+  <view class="tabs">
+    <view class="game-icon-box">
+      <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
+    </view>
+    <view class="profile-icon-box">
+      <image class="profile-icon" src="https://palletshifter.com/images/icons/profile.png"></image>
+      <text>\n</text>
+      <text class="p">Profile</text>
+    </view>
+  </view>
+  
+</view>

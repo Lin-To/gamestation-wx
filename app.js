@@ -21,5 +21,8 @@ App({
       }
     })
   },
-  globalData: {}
+  globalData: {
+    id: {}
+  }
 })
+

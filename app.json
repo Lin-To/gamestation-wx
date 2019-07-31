@@ -4,7 +4,8 @@
     "pages/home/home",
     "pages/search/search",
     "pages/request/request",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/show/show"
   ],
   "window": {
     "backgroundTextStyle": "light",
