@@ -31,7 +31,7 @@
       </block>
     </swiper>
   </view>
-  </view>
+</view>
   <!-- Add checkbox button filters for these -->
   <view class="filter-tabs">
     <view class="filter-tab">
