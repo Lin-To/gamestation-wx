@@ -1,2 +1,43 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="page">
+  <view class="top-part">
+    <view class="avatar">
+      <image class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/slywo1"></image>
+    </view>
+    <view class="Welcome">
+      <text class="h2">Hello, Xenondrix!</text>
+    </view>
+  </view>
+
+  <view class="tabs">
+    <view class="texts">
+      <text>Edit Profile</text>
+    </view>
+    <view class="button">
+      <text>></text>
+    </view>
+  </view>
+  <view class="tabs">
+    <view class="texts">
+      <text>View your rentals</text>
+    </view>
+    <view class="button">
+      <text>></text>
+    </view>
+  </view>
+  <view class="tabs">
+    <view class="texts">
+      <text>Add a listing</text>
+    </view>
+    <view class="button">
+      <text>></text>
+    </view>
+  </view>
+  <view class="tabs last-tab">
+    <view class="texts">
+      <text>Wishlist</text>
+    </view>
+    <view class="button">
+      <text>></text>
+    </view>
+  </view>
+</view>

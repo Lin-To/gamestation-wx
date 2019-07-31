@@ -20,15 +20,15 @@
     <view class="name">
       <text class="h2">{{game.name}}</text>
     </view>
-    <text class="p">Click to see more</text>
+    <text class="p"></text>
   </view>
 </view>
 
 <view class="description-box">
   <view class="title">
-    <text class="h2">Game description</text>
+    <text class="h2">{{game_name}}</text>
   </view>
-  <text class="p">jfkdljf;ls\najflsa;jfdl\nsajlfkdjflds\njlf;sajflk\ndsjf;aljsdlkfa</text>
+  <text class="p">{{game_description}}</text>
 </view>
 
 <view class="footer">

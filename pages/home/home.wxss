@@ -183,7 +183,7 @@ left:15rpx;
   position: relative;
   padding-left: 30rpx;
 }
- 
+
 .card-product-purple image {
   height: 100%;
   width: 40%;
