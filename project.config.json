@@ -24,12 +24,11 @@
 	"libVersion": "2.7.7",
 	"appid": "wx3f52b93965ece9e1",
 	"projectname": "gamestation-wx",
+	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"isGameTourist": false,
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
+	"scripts": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -44,11 +43,10 @@
 			"list": []
 		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -86,17 +84,16 @@
 					"scene": null
 				},
 				{
-          "id": 5,
-					"name": "newGame",
-					"pathName": "pages/newGame/newGame",
-        },
-        {
 					"id": -1,
 					"name": "Profile",
 					"pathName": "pages/profile/profile",
-        },
-        {
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "new game",
+					"pathName": "pages/newGame/newGame",
 					"scene": null
 				}
 			]
