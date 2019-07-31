@@ -1,0 +1,37 @@
+<view class="card-product">
+  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <view class="card-product-infos">
+    <text class="h2">Product name</text>
+    <text class="p">Product description with relevant info only.</text>
+  </view>
+</view>
+
+<view>
+  <view>{{year}} year {{month}} month {{day}} day</view>
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{years}}" style="line-height: 50px">{{item}} year</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{months}}" style="line-height: 50px">{{item}} month</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{days}}" style="line-height: 50px">{{item}} day</view>
+    </picker-view-column>
+  </picker-view>
+</view>
+
+
+
+  <view class="page-content">  
+    <view class="tabs">
+      <view class="game-icon-box">
+        <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
+      </view>
+      <view class="profile-icon-box">
+        <image class="profile-icon" src="https://palletshifter.com/images/icons/profile.png"></image>
+        <text>\n</text>
+        <text class="p">Profile</text>
+      </view>
+    </view>
+  </view>
