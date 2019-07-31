@@ -21,7 +21,7 @@ Page({
   onLoad: function (options) {
     let page = this
     // let name = app.globalData.name
-   
+
 
     wx.request({
       // url: 'http://localhost:3000/api/v1/games',
@@ -30,7 +30,7 @@ Page({
         console.log(res)
         page.setData({ games: res.data.games })
       }
-    }) 
+    })
   },
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -80,7 +80,6 @@ Page({
     // save id to global data - then you navigate to page
     wx.navigateTo({
       url: `/pages/show/show?gameId=${id}`
-
     })
   },
 })
