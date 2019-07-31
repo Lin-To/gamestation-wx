@@ -170,18 +170,18 @@
 
 }
  .card-h2 {
-    font-size: 38rpx;
+    font-size: 32rpx;
     font-weight: bolder;
     top:0;
  }
   .card-p {
-    font-size: 30rpx;
+    font-size: 26rpx;
     opacity: 75%;
     font-weight: regular;
     opacity: .65;
  }
  .card-footer-p {
-    font-size: 30rpx;
+    font-size: 26rpx;
     font-weight: regular;
     opacity: .65;
     /* align-self: flex-end; */
@@ -189,9 +189,9 @@
 
 .card-product image {
   height: 100%;
-  width: 40%;
   overflow:hidden;
   object-fit: cover;
+  flex-basis:40%;
 }
 .card-icon {
 height: 23% !important;
@@ -225,22 +225,7 @@ left:15rpx;
   position: relative;
   padding-left: 30rpx;
 }
- .card-h2 {
-    font-size: 38rpx;
-    font-weight: bolder;
-    top:0;
- }
-  .card-p {
-    font-size: 30rpx;
-    opacity: 75%;
-    font-weight: regular;
-    opacity: .65;
- }
- .card-footer-p {
-    font-size: 30rpx;
-    font-weight: regular;
-    opacity: .65;
- }
+ 
 .card-product-purple image {
   height: 100%;
   width: 40%;

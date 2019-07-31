@@ -16,6 +16,16 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    let page = this
+
+    wx.request({
+      url: 'http://localhost:3000/api/v1/games',
+      success: function (res) {
+        console.log(res)
+        page.setData({ games: res.data.games })
+      }
+    })
+
   },
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -52,6 +62,13 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  goToShow: function (event) {
+    let id = event.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/Search/search`, 
+    })
   },
 })
 // goToProfile: function() {
