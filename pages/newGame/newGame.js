@@ -33,13 +33,10 @@ Page({
       url: 'https://gamestation.herokuapp.com/api/v1/games',
       method: 'POST',
       data: game,
-      success: function (res) {
-        wx.redirectTo({
-          url: '/pages/home/home',
-        })
-      }, 
-      fail: function(res) {
-        console.log(6, res)
+      success() {
+        wx.reLaunch({
+          url: '/pages/home/home'
+        });
       }
     })
   },

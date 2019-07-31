@@ -62,5 +62,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  goToAdd: function (event) {
+    wx.navigateTo({
+      url: '/pages/newGame/newGame'
+    })
   }
 })

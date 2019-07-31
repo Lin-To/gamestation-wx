@@ -24,7 +24,7 @@
       <text>></text>
     </view>
   </view>
-  <view class="tabs">
+  <view class="tabs" bindtap="goToAdd">
     <view class="texts">
       <text>Add a listing</text>
     </view>
