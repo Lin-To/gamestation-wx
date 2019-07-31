@@ -86,9 +86,16 @@
 					"scene": null
 				},
 				{
+          "id": 5,
+					"name": "newGame",
+					"pathName": "pages/newGame/newGame",
+        },
+        {
 					"id": -1,
 					"name": "Profile",
 					"pathName": "pages/profile/profile",
+        },
+        {
 					"query": "",
 					"scene": null
 				}

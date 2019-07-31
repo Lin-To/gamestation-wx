@@ -1,7 +1,8 @@
+
 App({
   onLaunch: function () {
-    const host = 'https://gamestation.herokuapp.com/api/v1/'
-    console.log('beginning login')
+    const host = 'https://gamestation.herokuapp.com/api/v1/';
+    console.log('beginning login');
     wx.login({
       success: (res) => {
         console.log(res)
@@ -21,8 +22,7 @@ App({
       }
     })
   },
-  globalData: {
-    id: {}
-  }
+  globalData: {}
 })
+
 
