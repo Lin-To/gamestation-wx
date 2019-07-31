@@ -18,28 +18,30 @@
   </view>
   <view class="card-product-infos">
     <view class="name">
-      <text class="h2">Product name\n</text>
+      <text class="h2">Linny GamesMaster</text>
     </view>
-    <text class="p">Click to see more</text>
+    <text class="p">Linny has 8 other games</text>
   </view>
 </view>
 
 <view class="description-box">
   <view class="title">
-    <text class="h2">Game description</text>
+    <text class="h2">{{game_name}}</text>
   </view>
-  <text class="p">jfkdljf;ls\najflsa;jfdl\nsajlfkdjflds\njlf;sajflk\ndsjf;aljsdlkfa</text>
+  <text class="p">{{game_description}}</text>
 </view>
 
 <view class="footer">
   <view class="tabs">
     <view class="game-icon-box">
-      <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
+      <image class="game-icon" src="/pages/images/star.png"></image>
+       <text>\n</text>
+      <text class="p">Wish List</text>
     </view>
     <view class="profile-icon-box">
-      <image class="profile-icon" src="https://palletshifter.com/images/icons/profile.png"></image>
+      <image class="profile-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
       <text>\n</text>
-      <text class="p">Profile</text>
+      <text class="p">Book Now</text>
     </view>
   </view>
 </view>

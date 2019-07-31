@@ -1,1 +1,50 @@
-/* pages/profile/profile.wxss */
+.page {
+  background-color: #0D1420;
+  height: 100vh;
+}
+
+.top-part {
+  text-align: center;
+  padding: 5% 0;
+  margin-bottom: 5%;
+}
+
+.avatar-large {
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  margin-bottom: 2%;
+}
+
+.h2{
+  color: white;
+  font-size: 24px;
+}
+
+.tabs{
+  padding: 2% 5%;
+  margin: 2% 0;
+  border-top: solid 1px #7CF2F2;
+}
+
+.last-tab{
+  border-bottom: solid 1px #7CF2F2;
+}
+
+.tabs .texts text{
+  color: white;
+  font-size: 16px;
+}
+
+.tabs .button text{
+  color: white;
+  font-size: 20px;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs .texts{
+  flex: 60%;
+}
