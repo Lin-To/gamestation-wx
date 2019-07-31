@@ -19,6 +19,7 @@
     </view>
   </view>
 </view>
+
 <view class="page-content">
   <!-- Change images to dynamic ones from database later -->
   <view class="sliding-images">
@@ -29,6 +30,7 @@
         </swiper-item>
       </block>
     </swiper>
+  </view>
   </view>
   <!-- Add checkbox button filters for these -->
   <view class="filter-tabs">
@@ -45,39 +47,6 @@
       <text class="p">Distance</text>
     </view>
   </view>
-
-<!-- Need back-end's data for this -->
-  <!-- <view class="rental-items" wx:for="{{rental-items.length}}" wx:for-index="id">
-    <view data-id="{{item}}" class="rental-item-box" bindtap="goToShow">
-      <view class="rental-item-image-box">
-        <image class="rental-item-image" src=""></image>
-      </view>
-      <view class="rental-item-text">
-        <view class="rental-item-name-and-description">
-          <text class="h2">{{item.name}}</text>
-          <text class="p">{{item.description}}</text>
-        </view>
-        <view class="rental-item-distance">
-          <text class="p">{{item.distance}}</text>
-        </view>
-      </view>
-    </view>
-  </view> -->
-<!-- 
-  <view class="card">
-    <view class="image">
-      <image class="item-image" src="https://images.unsplash.com/photo-1559984859-d568d6eeba0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"></image>
-    </view>
-    <view class="item-text">
-      <view class="name-and-details-box">
-        <text class="name">Product Name\n</text>
-        <text class="details">Product description with relevant info only</text>
-      </view>
-      <view class="distance-box">
-        <text class="distance">Distance</text>
-      </view>
-    </view>
-  </view> -->
 
 <view class="cards-container">
   <view class="card-product">
@@ -110,7 +79,7 @@
 
 
   <!-- Add bindtaps -->
-</view>
+<!-- </view>
 <view class="footer">
   <view class="tabs">
     <view class="game-icon-box">
@@ -122,4 +91,4 @@
       <text class="p">Profile</text>
     </view>
   </view>
-</view>
+</view> -->

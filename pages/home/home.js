@@ -53,4 +53,21 @@ Page({
   onShareAppMessage: function () {
   
   },
-  })
+})
+// goToProfile: function() {
+//   wx.switchTab({
+//     url: '/pages/profile/profile',
+//     wx: wx.showToast({
+//     title: 'Success!',
+//     })
+//   })
+// ),
+
+//   goToHome: function() {
+//     wx.switchTab({
+//       url: '/pages/home/home',
+//       wx: wx.showToast({
+//         title: 'Success!',
+//       })
+//     })
+// ),
