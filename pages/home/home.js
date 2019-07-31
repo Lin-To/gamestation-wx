@@ -10,7 +10,8 @@ Page({
       'https://images.unsplash.com/photo-1518908336710-4e1cf821d3d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1473&q=80',
       'https://images.unsplash.com/photo-1552871847-d81af14f486d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80',
       'https://images.unsplash.com/photo-1533702165324-66678e2069b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
-    ]},
+    ]
+  },
 
   /**
    * Lifecycle function--Called when page load
@@ -62,13 +63,13 @@ Page({
    * Called when user click on the top right corner to share
    */
   onShareAppMessage: function () {
-  
+
   },
 
   goToShow: function (event) {
     let id = event.currentTarget.dataset.id
     wx.navigateTo({
-      url: `/pages/Search/search`, 
+      url: `/pages/show/show`,
     })
   },
 })
