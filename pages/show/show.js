@@ -1,4 +1,6 @@
 // pages/market/market.js
+let app = getApp()
+
 Page({
 
   /**
@@ -12,7 +14,28 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    // fecth id of selected game from global data
+    // set it to a variable
+    // interpolate it at the end of the url
+    
+    let page = this
+    let gameId = options.gameId
+    // let game_id = app.globalData.id
+    // console.log("id", game_id)
+    wx.request({
+      url: `https://gamestation.herokuapp.com/api/v1/games/${gameId}`,
+      success: function (res) {
+        console.log("res", res)
+        const game_name = res.data.name;
+        // console.log("game name",game_name)
+        const game_description = res.data.description;
+        page.setData({
+           game_name: game_name,
+          game_description: game_description
+           });
+        wx.hideToast();
+      }
+    })
   },
 
   /**
@@ -64,3 +87,5 @@ Page({
 
   }
 })
+
+
