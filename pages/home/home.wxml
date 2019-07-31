@@ -62,7 +62,7 @@
     </view>
   </view>
 
-   <view class="card-product-purple">
+   <!-- <view class="card-product-purple">
    <image class="card-icon" src="/pages/images/star.png"/>
     <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
     <view class="card-product-infos-purple">
@@ -73,14 +73,14 @@
       </view>
       <view class="card-footer-p">Distance:</view>
     </view>
-  </view>
+  </view> -->
 
 </view>
 
 
   <!-- Add bindtaps -->
 <!-- </view>
-<view class="footer">
+<!-- <view class="footer">
   <view class="tabs">
     <view class="game-icon-box">
       <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>

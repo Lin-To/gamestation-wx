@@ -18,7 +18,7 @@
   </view>
   <view class="card-product-infos">
     <view class="name">
-      <text class="h2">Product name\n</text>
+      <text class="h2">{{game.name}}</text>
     </view>
     <text class="p">Click to see more</text>
   </view>
