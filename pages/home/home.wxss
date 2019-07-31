@@ -11,6 +11,12 @@
 }
 
 /* Search */
+
+.search{
+  width:100%;
+  align-self: center;
+}
+
 .navbar .search-box-container {
   padding-left: 5vw;
   flex: 85%;

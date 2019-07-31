@@ -1,16 +1,7 @@
 <!--pages/home/home.wxml-->
 <!-- Change searchbox text (and maybe add bindtap to search icon) and location text dynamically -->
 <view class="navbar">
-  <view class="search-box-container">
-    <view class="search-box">
-      <view class="search-icon-box">
-        <image class="search-icon" src="https://image.flaticon.com/icons/svg/751/751463.svg"></image>
-      </view>
-      <view class="search-text-box">
-        <text class="search-text">Searchbox text</text>
-      </view>
-    </view>
-  </view>
+<van-search class="search" value="{{ value }}" placeholder="请输入搜索关键词" background="transparent" shape="round" />
   <view class="location-container">
     <view class="location-icon-box">
       <image class="location-icon" src="https://www.pngkey.com/png/full/506-5065152_edit-location-card-location-icon-in-white-colour.png"></image>
