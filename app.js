@@ -1,7 +1,6 @@
 App({
   onLaunch: function () {
-    // const host = 'https://gamestation.herokuapp.com/api/v1/';
-    const host = 'http://localhost:3000/api/v1/';
+    const host = 'https://gamestation.herokuapp.com/api/v1/';
     console.log('beginning login');
     wx.login({
       success: (res) => {
