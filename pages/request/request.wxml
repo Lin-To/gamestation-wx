@@ -1,10 +1,16 @@
-<view class="card-product">
-  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-  <view class="card-product-infos">
-    <text class="h2">Product name</text>
-    <text class="p">Product description with relevant info only.</text>
+   <view class="card-product-purple">
+   <image class="card-icon" src="/pages/images/star.png"/>
+    <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+    <view class="card-product-infos-purple">
+    <view class="content">
+      <view class="card-h2">Product name</view>
+      <view class="card-p">Category:</view>
+      <view class="card-p">Edition:</view>
+      </view>
+      <view class="card-footer-p">Distance:</view>
+    </view>
   </view>
-</view>
+
 
 <view>
   <view>{{year}} year {{month}} month {{day}} day</view>
@@ -23,15 +29,3 @@
 
 
 
-  <view class="page-content">  
-    <view class="tabs">
-      <view class="game-icon-box">
-        <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
-      </view>
-      <view class="profile-icon-box">
-        <image class="profile-icon" src="https://palletshifter.com/images/icons/profile.png"></image>
-        <text>\n</text>
-        <text class="p">Profile</text>
-      </view>
-    </view>
-  </view>
