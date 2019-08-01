@@ -1,0 +1,8 @@
+.page-content .sliding-images .slider {
+  width: 20vw;
+  height: 10vw;
+}
+.sliding-months {
+  width: 100%;
+  height: 100%;
+}

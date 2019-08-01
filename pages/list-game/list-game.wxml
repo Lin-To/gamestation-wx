@@ -27,9 +27,9 @@
     <view class="section">
       <text>Start Date:\n</text>
       <view class="sub-section date-picker">
-        <picker mode="date" value="{{date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindDateChange">
+        <picker mode="date" value="{{date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindStartDateChange">
           <view class="picker">
-            <text class="ph">{{date}}</text>
+            <text class="ph">{{start_date}}</text>
           </view>
         </picker>
       </view>
@@ -38,9 +38,9 @@
     <view class="section">
       <text>End Date:\n</text>
       <view class="sub-section date-picker">
-        <picker mode="date" value="{{date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindDateChange">
+        <picker mode="date" value="{{date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindEndDateChange">
           <view class="picker">
-            <text class="ph">{{date}}</text>
+            <text class="ph">{{end_date}}</text>
           </view>
         </picker>
       </view>
@@ -56,8 +56,12 @@
 
     <view class="section">
       Edition:
-      <view class="sub-section">
-        <input name="input" placeholder="PlayStation 4 Slim" class="ph"/>
+      <view class="sub-section date-picker">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{platform}}">
+        <view class="picker">
+          <text class="ph">{{platform[index]}}</text>
+        </view>
+        </picker>
       </view>
     </view>
 

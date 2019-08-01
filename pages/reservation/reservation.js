@@ -1,28 +1,31 @@
-// pages/rentals/rentals.js
-const app = getApp();
-
+// pages/profile/profile.js
 Page({
 
   /**
    * Page initial data
    */
   data: {
-
+    months: [
+      'JAN',
+      'FEB',
+      'MAR',
+      'APR',
+      'MAY',
+      'JUN',
+      'JUL',
+      'AUG',
+      'SEP',
+      'OCT',
+      'NOV',
+      'DEC'
+    ],
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    let id = app.globalData.userId;
-    console.log('userId', id);
-    let page = this;
-    wx.request({
-      url: `https://gamestation.herokuapp.com/api/v1/users/${id}`,
-      success: function (res) {
-        page.setData({games: res.data.games});
-      },
-    })
+
   },
 
   /**

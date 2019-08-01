@@ -61,6 +61,10 @@
   padding: 2vh 1vh 1vh 1vh;
 }
 
+.edition-section{
+  height: 4vh;
+}
+
 .date-picker {
   padding-top: 0;
 }
