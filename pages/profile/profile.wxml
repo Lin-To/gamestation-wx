@@ -1,7 +1,10 @@
 <view class="page">
 
   <block wx:if="{{userInfo === null}}">
+  <view class="login-container">
+  <view class="h1">Sign In To Play</view>
     <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+    </view>
   </block>
 
   <block wx:else>
@@ -10,7 +13,7 @@
         <image class="avatar-large" alt="avatar-large" src="{{avatar}}"></image>
       </view>
       <view class="Welcome">
-        <text class="h2">Hello {{name}}!</text>
+        <text class="h1">Hello {{name}}!</text>
       </view>
     </view>
 

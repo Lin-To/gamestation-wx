@@ -1,7 +1,11 @@
+
 <!--pages/newGame/newGame.wxml-->
-<text>Add a Game</text>
-<form bindsubmit='submitForm'>
-  <input name='name' placeholder='input name here'></input>
+<view class="container">
+<view class="h1">Rent a Game/Console</view>
+<form bindsubmit='submitForm' class="form">
+  <label for="name">Name:</label>
+  <input name='name' placeholder='What are you renting?'></input>
+  <label for="name">Description</label>
   <input name='description' placeholder='input description here'></input>
 
   <view class="">
@@ -16,3 +20,4 @@
   <button form-type='submit'>Submit</button>
   <button form-type='reset'>reset</button>
 </form>
+</view>

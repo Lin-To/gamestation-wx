@@ -1,6 +1,34 @@
+/* logging in */
+.login-container{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height:100vh;
+  flex-direction: column;
+}
+
+.h1{
+  font-size: 60rpx;
+  font-weight: bold;
+  color: white;
+}
+
+.login-container button{
+  font-weight: bold;
+  margin-top: 30rpx;
+  background: #7CF2F2;
+  color: white;
+  width: 75%;
+  box-shadow: 0px 0px 15px #7CF2F2;
+}
+
+
+/* logged in  */
 .page {
   background-color: #0D1420;
   height: 100vh;
+  padding: 30rpx 30rpx ;
+
 }
 
 .top-part {
@@ -16,35 +44,25 @@
   margin-bottom: 2%;
 }
 
-.h2{
-  color: white;
-  font-size: 24px;
-}
-
-.tabs{
-  padding: 2% 5%;
-  margin: 2% 0;
-  border-top: solid 1px #7CF2F2;
-}
-
 .last-tab{
   border-bottom: solid 1px #7CF2F2;
 }
 
 .tabs .texts text{
   color: white;
-  font-size: 16px;
+  font-size: 32rpx;
 }
 
-.tabs .button text{
+.tabs .button text {
   color: white;
-  font-size: 20px;
+  font-size: 32rpx;
 }
 
 .tabs {
   display: flex;
-}
-
-.tabs .texts{
-  flex: 60%;
+  justify-content: space-between;
+  flex-direction: row; 
+  padding: 30rpx;
+  border-block-start: 1px #7CF2F2 solid;
+ 
 }

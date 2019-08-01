@@ -110,6 +110,12 @@
 					"id": -1,
 					"name": "wish list",
 					"pathName": "pages/wishList/wishList",
+          "query": "",
+					"scene": null
+         },
+					"name": "Reservation",
+					"pathName": "pages/reservation/reservation",
+					"query": "",
 					"scene": null
 				}
 			]
