@@ -1,47 +1,50 @@
 <view class="page">
 
+  <block wx:if="{{userInfo === null}}">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+  </block>
 
-<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+  <block wx:else>
+    <view class="top-part">
+      <view class="avatar">
+        <image class="avatar-large" alt="avatar-large" src="{{avatar}}"></image>
+      </view>
+      <view class="Welcome">
+        <text class="h2">Hello {{name}}!</text>
+      </view>
+    </view>
 
-  <view class="top-part">
-    <view class="avatar">
-      <image class="avatar-large" alt="avatar-large" src=""></image>
+    <view class="tabs">
+      <view class="texts">
+        <text>Edit Profile</text>
+      </view>
+      <view class="button">
+        <text>></text>
+      </view>
     </view>
-    <view class="Welcome">
-      <text class="h2">Hello, {{name}}</text>
+    <view class="tabs" bindtap="goToRentals">
+      <view class="texts">
+        <text>View your rentals</text>
+      </view>
+      <view class="button">
+        <text>></text>
+      </view>
     </view>
-  </view>
-
-  <view class="tabs">
-    <view class="texts">
-      <text>Edit Profile</text>
+    <view class="tabs" bindtap="goToAdd">
+      <view class="texts">
+        <text>Add a listing</text>
+      </view>
+      <view class="button">
+        <text>></text>
+      </view>
     </view>
-    <view class="button">
-      <text>></text>
+    <view class="tabs last-tab">
+      <view class="texts">
+        <text>Wishlist</text>
+      </view>
+      <view class="button">
+        <text>></text>
+      </view>
     </view>
-  </view>
-  <view class="tabs" bindtap="goToRentals">
-    <view class="texts">
-      <text>View your rentals</text>
-    </view>
-    <view class="button">
-      <text>></text>
-    </view>
-  </view>
-  <view class="tabs" bindtap="goToAdd">
-    <view class="texts">
-      <text>Add a listing</text>
-    </view>
-    <view class="button">
-      <text>></text>
-    </view>
-  </view>
-  <view class="tabs last-tab">
-    <view class="texts">
-      <text>Wishlist</text>
-    </view>
-    <view class="button">
-      <text>></text>
-    </view>
-  </view>
+  </block>
 </view>

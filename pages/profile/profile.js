@@ -7,7 +7,7 @@ Page({
    * Page initial data
    */
   data: {
-
+    userInfo: null
   },
 
   /**
@@ -75,11 +75,29 @@ Page({
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
-    this.setData({
+    console.log('globaldata', app.globalData)
+
+    let page = this
+    page.setData({
       userInfo: e.detail.userInfo,
       name: e.detail.userInfo.nickName,
       avatar: e.detail.userInfo.avatarUrl
     })
-  }
 
+    let name = e.detail.userInfo.nickName
+
+    let user = {
+      name: name
+    }
+
+    wx.request({
+      // url: `http://localhost:3000/api/v1/users`,
+      url: `https://gamestation.herokuapp.com/api/v1/users`,
+      method: 'POST',
+      data: user,
+      success(res) {
+        console.log(res)
+      }
+    });
+  }, 
 })
