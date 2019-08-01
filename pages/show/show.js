@@ -42,9 +42,14 @@ Page({
         console.log("res", res)
         const game_name = res.data.name;
         const game_description = res.data.description;
+        const user = res.data.user.name;
+        const avatar = res.data.user.avatar;
         page.setData({
           game_name: game_name,
-          game_description: game_description
+          game_description: game_description,
+          user: user,
+          avatar: avatar
+
            });
         wx.hideToast();
       }
@@ -99,7 +104,6 @@ Page({
   onShareAppMessage: function () {
 
   },
-  
 })
 
 

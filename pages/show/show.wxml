@@ -16,14 +16,14 @@
 <!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button> -->
   <view class="card-product">
     <view class="image-container">
-      <image class="avatar-large" alt="avatar-large" src=""></image>
+      <image class="avatar-large" alt="avatar-large" src="{{avatar}}"></image>
     </view>
     <view class="card-product-infos">
       <view class="name">
       <!-- need to fetch data from wx request from user -->
-        <text class="h2">{{name}}</text>
+        <text class="h2">{{user}}</text>
       </view>
-      <text class="p">{{name}} has X  other games</text>
+      <text class="p">{{user}} has X  other games</text>
     </view>
   </view>
 
@@ -79,4 +79,18 @@
       </view>
     </view>
  </form>
+</view>
+
+  <!-- Add bindtaps -->
+  <view class="footer">
+    <view class="tabs">
+      <view class="game-icon-box">
+        <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
+      </view>
+      <view class="profile-icon-box">
+        <image class="profile-icon" src="https://palletshifter.com/images/icons/profile.png"></image>
+        <text>\n</text>
+        <text class="p">Profile</text>
+      </view>
+    </view>
 </view>
