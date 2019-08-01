@@ -1,5 +1,6 @@
 .page {
   background-color: #0D1420;
+  height: 95vh;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -16,9 +17,16 @@
   box-shadow: 0 0 15px #E4FDBC;
 }
 
+.game-icon {
+  height: 43% !important;
+  width: 20% !important;
+}
 
+.btn-purple {
+  background-color: #632DF5;
+  color: white;
 
-
+}
 
 .card-product {
   overflow: hidden;
@@ -49,11 +57,11 @@
   line-height: 1.2;
   opacity: .7;
   margin-bottom: 0;
-  margin-top: 8px;
   color: #ACADB7;
 }
-.card-product .card-product-infos {
-  padding: 5vw;
+.card-product-infos {
+  padding: 20rpx;
+  margin-left:20rpx;
 }
 .name{
   margin-bottom: 10%;

@@ -1,16 +1,7 @@
 <!--pages/home/home.wxml-->
 <!-- Change searchbox text (and maybe add bindtap to search icon) and location text dynamically -->
 <view class="navbar">
-  <view class="search-box-container">
-    <view class="search-box">
-      <view class="search-icon-box">
-        <image class="search-icon" src="https://image.flaticon.com/icons/svg/751/751463.svg"></image>
-      </view>
-      <view class="search-text-box">
-        <text class="search-text">Searchbox text</text>
-      </view>
-    </view>
-  </view>
+<van-search class="search" value="{{ value }}" placeholder="请输入搜索关键词" background="transparent" shape="round" />
   <view class="location-container">
     <view class="location-icon-box">
       <image class="location-icon" src="https://www.pngkey.com/png/full/506-5065152_edit-location-card-location-icon-in-white-colour.png"></image>
@@ -49,20 +40,20 @@
   </view>
 
 <view class="cards-container">
-  <view class="card-product">
+  <view class="card-product" wx:for="{{games}}" wx:for-item="game" data-item="{{game}}" >
     <image class="card-icon" src="/pages/images/star.png"/>
-    <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-    <view class="card-product-infos">
+    <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" mode = "aspectFill" />
+    <view data-id="{{game.id}}"class="card-product-infos" bindtap="goToShow">
     <view class ="content">
-      <view class="card-h2">Product name</view>
-      <view class="card-p">Category:</view>
+      <view class="card-h2">{{game.name}}</view>
+      <view class="card-p">Category:{{game.description}}</view>
       <view class="card-p">Edition:</view>
       </view>
       <view class="card-footer-p">Distance:</view>
     </view>
   </view>
 
-   <view class="card-product-purple">
+   <!-- <view class="card-product-purple">
    <image class="card-icon" src="/pages/images/star.png"/>
     <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
     <view class="card-product-infos-purple">
@@ -73,14 +64,14 @@
       </view>
       <view class="card-footer-p">Distance:</view>
     </view>
-  </view>
+  </view> -->
 
 </view>
 
 
   <!-- Add bindtaps -->
 <!-- </view>
-<view class="footer">
+<!-- <view class="footer">
   <view class="tabs">
     <view class="game-icon-box">
       <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>

@@ -1,4 +1,5 @@
-// pages/market/market.js
+// pages/search/search.js
+
 Page({
 
   /**

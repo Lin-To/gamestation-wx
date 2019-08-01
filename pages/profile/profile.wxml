@@ -1,10 +1,14 @@
 <view class="page">
+
+
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+
   <view class="top-part">
     <view class="avatar">
-      <image class="avatar-large" alt="avatar-large" src="https://kitt.lewagon.com/placeholder/users/slywo1"></image>
+      <image class="avatar-large" alt="avatar-large" src=""></image>
     </view>
     <view class="Welcome">
-      <text class="h2">Hello, Xenondrix!</text>
+      <text class="h2">Hello, {{name}}</text>
     </view>
   </view>
 
@@ -16,7 +20,7 @@
       <text>></text>
     </view>
   </view>
-  <view class="tabs">
+  <view class="tabs" bindtap="goToRentals">
     <view class="texts">
       <text>View your rentals</text>
     </view>
@@ -24,7 +28,7 @@
       <text>></text>
     </view>
   </view>
-  <view class="tabs">
+  <view class="tabs" bindtap="goToAdd">
     <view class="texts">
       <text>Add a listing</text>
     </view>

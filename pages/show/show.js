@@ -1,18 +1,52 @@
 // pages/market/market.js
+const app = getApp()
+
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    imgUrls: ["https://images.unsplash.com/photo-1559984859-d568d6eeba0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"]
+    imgUrls: ["https://images.unsplash.com/photo-1559984859-d568d6eeba0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"],
+    loading: false,
   },
-
+  // Form Submission
+  bindFormSubmit: function (e) {
+    // Local storage
+    var review = e.detail.value.review
+  },
+  bindDateStartChange: function (e) {
+    console.log('picker startdate value', e.detail.value)
+    this.setData({
+      start_date: e.detail.value 
+      })
+  },
+  bindDateEndChange: function (e) {
+    console.log('picker end date value', e.detail.value)
+    this.setData({
+      end_date: e.detail.value
+    })
+  }, 
+  
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    let page = this
+    let gameId = options.gameId
+    wx.request({
+      url: `https://gamestation.herokuapp.com/api/v1/games/${gameId}`,
+      success: function (res) {
+        console.log("res", res)
+        const game_name = res.data.name;
+        const game_description = res.data.description;
+        page.setData({
+          game_name: game_name,
+          game_description: game_description
+           });
+        wx.hideToast();
+      }
+    })
   },
 
   /**
@@ -62,5 +96,9 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  
 })
+
+
+

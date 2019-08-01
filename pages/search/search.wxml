@@ -1,3 +1,4 @@
+
 <!--pages/home/home.wxml-->
 <!-- Change searchbox text (and maybe add bindtap to search icon) and location text dynamically -->
 <view class="navbar">

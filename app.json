@@ -6,7 +6,9 @@
     "pages/request/request",
     "pages/profile/profile",
     "pages/show/show",
-    "pages/list-game/list-game"
+    "pages/newGame/newGame",
+    "pages/rentals/rentals"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,7 +32,7 @@
       }
     ]
   },
-
+  
   "sitemapLocation": "sitemap.json"
 }
 
