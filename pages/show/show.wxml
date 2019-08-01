@@ -84,15 +84,3 @@
 </view>
 
   <!-- Add bindtaps -->
-  <view class="footer">
-    <view class="tabs">
-      <view class="game-icon-box">
-        <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
-      </view>
-      <view class="profile-icon-box">
-        <image class="profile-icon" src="https://palletshifter.com/images/icons/profile.png"></image>
-        <text>\n</text>
-        <text class="p">Profile</text>
-      </view>
-    </view>
-</view>
