@@ -22,7 +22,11 @@
   width: 20% !important;
 }
 
+.btn-purple {
+  background-color: #632DF5;
+  color: white;
 
+}
 
 .card-product {
   overflow: hidden;
