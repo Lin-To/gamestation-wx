@@ -1,0 +1,75 @@
+<view class="page">
+
+  <view class="upload-photo">
+    <view class="texts">
+      <text class="h2">Upload a photo:</text>
+    </view>
+    <view class="button">
+      <image src="https://image.flaticon.com/icons/svg/148/148717.svg"></image>
+    </view>
+  </view>
+
+  <form bindsubmit="formSubmit">
+    <view class="section">
+      Name:
+      <view class="sub-section">
+        <input name="input" placeholder="Most epic blue PS4!" class="ph" />
+      </view>
+    </view>
+
+    <view class="section">
+      Description:
+      <view class="sub-section">
+        <input name="input" placeholder='Good Condition' class="ph" />
+      </view>
+    </view>
+
+    <view class="section">
+      <text>Start Date:\n</text>
+      <view class="sub-section date-picker">
+        <picker mode="date" value="{{date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindStartDateChange">
+          <view class="picker">
+            <text class="ph">{{start_date}}</text>
+          </view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="section">
+      <text>End Date:\n</text>
+      <view class="sub-section date-picker">
+        <picker mode="date" value="{{date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindEndDateChange">
+          <view class="picker">
+            <text class="ph">{{end_date}}</text>
+          </view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="section">
+      <radio-group class="radio-group">
+        <label class="radio" wx:for="{{items}}" class="radio-buttons">
+          <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+      </radio-group>
+    </view>
+
+    <view class="section">
+      Edition:
+      <view class="sub-section date-picker">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{platform}}">
+        <view class="picker">
+          <text class="ph">{{platform[index]}}</text>
+        </view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="section submit-section">
+      <view class="sub-section submit-button">
+        <text>Submit</text>
+      </view>
+    </view>
+
+  </form>
+</view>
