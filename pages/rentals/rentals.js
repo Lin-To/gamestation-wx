@@ -1,5 +1,5 @@
-// pages/profile/profile.js
-const app = getApp()
+// pages/rentals/rentals.js
+const app = getApp();
 
 Page({
 
@@ -14,7 +14,15 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    let id = app.globalData.userId;
+    //console.log('userId', id);
+    let page = this;
+    wx.request({
+      url: `https://gamestation.herokuapp.com/api/v1/users/${id}`,
+      success: function (res) {
+        page.setData({games: res.data.games});
+      },
+    })
   },
 
   /**
@@ -64,29 +72,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  goToRentals: function () {
-    console.log("going to the rentals now..");
-    wx.navigateTo({
-      url: '../rentals/rentals',
-    })
-  },
-
-  goToAdd: function (event) {
-    wx.navigateTo({
-      url: '/pages/newGame/newGame'
-    })
-  },
-
-  getUserInfo: function (e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      name: e.detail.userInfo.nickName,
-      avatar: e.detail.userInfo.avatarUrl
-    })
   }
-
 })
