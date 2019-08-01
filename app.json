@@ -7,6 +7,7 @@
     "pages/profile/profile",
     "pages/show/show",
     "pages/newGame/newGame"
+=
   ],
   "window": {
     "backgroundTextStyle": "light",

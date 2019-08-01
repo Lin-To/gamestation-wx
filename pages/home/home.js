@@ -21,8 +21,7 @@ Page({
   onLoad: function (options) {
     let page = this
     // let name = app.globalData.name
-
-
+  
     wx.request({
       // url: 'http://localhost:3000/api/v1/games',
       url: 'https://gamestation.herokuapp.com/api/v1/games',

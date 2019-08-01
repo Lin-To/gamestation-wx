@@ -66,6 +66,13 @@ Page({
 
   },
 
+  goToRentals: function () {
+    console.log("going to the rentals now..");
+    wx.navigateTo({
+      url: '../rentals/rentals',
+    })
+  },
+
   goToAdd: function (event) {
     wx.navigateTo({
       url: '/pages/newGame/newGame'
