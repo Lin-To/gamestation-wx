@@ -1,4 +1,6 @@
 // pages/profile/profile.js
+const app = getApp()
+
 Page({
 
   /**
@@ -68,5 +70,16 @@ Page({
     wx.navigateTo({
       url: '/pages/newGame/newGame'
     })
+  },
+
+  getUserInfo: function (e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo,
+      name: e.detail.userInfo.nickName,
+      avatar: e.detail.userInfo.avatarUrl
+    })
   }
+
 })

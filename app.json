@@ -6,7 +6,8 @@
     "pages/request/request",
     "pages/profile/profile",
     "pages/show/show",
-    "pages/newGame/newGame"
+    "pages/newGame/newGame",
+    "pages/rentals/rentals"
   ],
   "window": {
     "backgroundTextStyle": "light",
