@@ -57,7 +57,7 @@
     <view class="section">
       Edition:
       <view class="sub-section">
-        <input name="input" placeholder="Enter your name here" class="ph"/>
+        <input name="input" placeholder="PlayStation 4 Slim" class="ph"/>
       </view>
     </view>
 
