@@ -1,1 +1,16 @@
 /* pages/newGame/newGame.wxss */
+
+.container {
+  padding: 30rpx 30rpx ;
+  background-color: #0D1420;
+  height: 100vh;
+  align-items:flex-start;
+  justify-content: flex-start;
+ }
+
+.h1{
+  font-size: 60rpx;
+  color:white;
+}
+
+

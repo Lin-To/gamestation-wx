@@ -1,8 +1,5 @@
 .page {
   background-color: #0D1420;
-  height: 95vh;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 .sliding-images .slider {
@@ -11,10 +8,13 @@
 .sliding-images .slider .sliding-image {
   width: 100%;
   height: 100%;
+  border-radius: 10rpx;
+
 }
 .slider-container {
-  margin: 0 5% 5% 5%;
-  box-shadow: 0 0 15px #E4FDBC;
+ box-shadow: 0 0 10px #E4FDBC;
+ margin-bottom:60rpx;
+border-radius: 10rpx;
 }
 
 .game-icon {
@@ -35,8 +35,6 @@
   box-shadow: 0 0 15px #632DF5;
   display: flex;
   align-items: center;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 .card-product .image-container{
   padding-left: 5vw;
@@ -73,7 +71,6 @@
   height: 113vh;
   padding: 10% 5% 0 5%;
 }
-
 .button {
   margin-top: 5vh;
   margin-left: 32.5vw;
@@ -91,7 +88,6 @@
 }
 .section {
   color: white;
-  font-size: 20px;
   margin: 5% 0;
 }
 .section .ph{
@@ -108,7 +104,8 @@
   width: 90vw;
   height: 3vh;
   color: white;
-  padding-top: 0.5vh;
+  font-size: 32rpx;
+  padding-top: 1vh;
 }
 .sub-section {
   background-color: #1B1647;
@@ -129,26 +126,13 @@
 }
 
 
-
-
-
-
-
-
-
-
-
 .description-box .title{
   margin-bottom: 5%;
+  font-size: 32rpx;
 }
 
 .description-box{
   padding: 5%;
-  margin: 0 5% 5% 5%;
-}
-
-.description-box .h2{
-  text-decoration: underline;
 }
 
 .description-box .p{
@@ -159,12 +143,6 @@
   margin-top: 8px;
   color: #ACADB7;
 }
-
-
-
-
-
-
 
 .footer .tabs {
   display: flex;

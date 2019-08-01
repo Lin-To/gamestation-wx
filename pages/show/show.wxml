@@ -1,3 +1,4 @@
+
 <view class = "page">
 
 <view class="slider-container">
@@ -21,7 +22,7 @@
     <view class="card-product-infos">
       <view class="name">
       <!-- need to fetch data from wx request from user -->
-        <text class="h2">{{name}}</text>
+        <text class="h2">{{name}}Hello</text>
       </view>
       <text class="p">{{name}} has X  other games</text>
     </view>
