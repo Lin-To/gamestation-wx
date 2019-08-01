@@ -82,7 +82,7 @@
 </view>
 
   <!-- Add bindtaps -->
-  <!-- <view class="footer">
+  <view class="footer">
     <view class="tabs">
       <view class="game-icon-box">
         <image class="game-icon" src="https://image.flaticon.com/icons/svg/262/262545.svg"></image>
@@ -93,4 +93,4 @@
         <text class="p">Profile</text>
       </view>
     </view>
-</view> -->
+</view>
