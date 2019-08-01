@@ -5,7 +5,8 @@
     "pages/search/search",
     "pages/request/request",
     "pages/profile/profile",
-    "pages/show/show"
+    "pages/show/show",
+    "pages/list-game/list-game"
   ],
   "window": {
     "backgroundTextStyle": "light",
