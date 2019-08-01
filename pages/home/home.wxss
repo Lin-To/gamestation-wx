@@ -132,7 +132,8 @@
   height: 75%;
   position: relative;
   padding-left: 30rpx;
-  flex-basis: 60%;
+  flex-basis:60%;
+
 }
  .card-h2 {
     font-size: 32rpx;

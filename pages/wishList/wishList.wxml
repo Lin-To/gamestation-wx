@@ -1,0 +1,17 @@
+<view class="page">
+
+  <view class="cards-container">
+    <view class="card-product" wx:for="{{games}}" wx:for-item="game" data-item="{{game}}" >
+      <image class="card-icon" src="/pages/images/star.png"/>
+      <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" mode = "aspectFill" />
+      <view data-id="{{game.id}}"class="card-product-infos" bindtap="goToShow">
+      <view class ="content">
+        <view class="card-h2">{{game.name}}</view>
+        <view class="card-p">Category:{{game.description}}</view>
+        <view class="card-p">Edition:{{game.edition}}</view>
+        </view>
+        <view class="card-footer-p">Distance:</view>
+      </view>
+    </view>
+  </view>
+</view>
