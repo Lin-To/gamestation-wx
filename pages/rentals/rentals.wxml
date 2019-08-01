@@ -2,6 +2,6 @@
 <text>My Stuff</text>
 <view class="card" wx:for="{{games}}" wx:for-item="game" data-item="{{game}}">
   <view>name: {{game.name}}</view>
-  <view>{{game.description}}</view>
+  <view>description: {{game.description}}</view>
   <view>{{game.edition}}</view>
 </view>
