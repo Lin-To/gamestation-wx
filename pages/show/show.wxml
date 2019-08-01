@@ -35,22 +35,48 @@
 </view>
 
 <!-- booking form for booking date -->
-<!-- start date picker -->
 <form bindsubmit="bindFormSubmit">
- <view class="section">
-  <picker mode="date" value="{{start_date}}" bindchange="bindDateStartChange">
-    <view class="picker, h2">
-      Start Date: {{start_date}}
+  <!-- <view class="section">
+    <picker mode="date" value="{{start_date}}" bindchange="bindDateStartChange">
+      <view class="picker">
+      <text class="ph">Start Date: {{start_date}}</text>
+        
+      </view>
+    </picker>
+  
+    <picker mode="date" value="{{end_date}}" bindchange="bindDateEndChange">
+      <view class="picker">
+        <text class="ph">End Date:{{end_date}}</text>
+      </view>
+    </picker>
+  </view> -->
+
+    <view class="section">
+      <text>Booking Start Date:\n</text>
+      <view class="sub-section date-picker">
+        <picker mode="date" value="{{start_date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindDateStartChange">
+          <view class="picker">
+            <text class="ph">{{start_date}}</text>
+          </view>
+        </picker>
+      </view>
     </view>
-  </picker>
-  <!-- end date picker -->
-  <picker mode="date" value="{{end_date}}" bindchange="bindDateEndChange">
-    <view class="picker, h2">
-      End Date: {{end_date}}
+    <view class="section">
+      <text>Booking End Date:\n</text>
+      <view class="sub-section date-picker">
+        <picker mode="date" value="{{end_date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindDateEndChange">
+          <view class="picker">
+            <text class="ph">{{end_date}}</text>
+          </view>
+        </picker>
+      </view>
     </view>
-  </picker>
-</view>
+
 <!-- booking button -->
-  <button class="btn-purple" form-type="submit">Book</button>
+     <view class="section submit-section">
+      <view class="sub-section submit-button">
+        <text>Book</text>
+      </view>
+    </view>
  </form>
 </view>
