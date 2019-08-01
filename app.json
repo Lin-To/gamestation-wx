@@ -8,6 +8,7 @@
     "pages/show/show",
     "pages/newGame/newGame",
     "pages/rentals/rentals"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
