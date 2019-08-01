@@ -1,3 +1,4 @@
+
 /* pages/newGame/newGame.wxss */
 
 .container {
@@ -11,6 +12,19 @@
 .h1{
   font-size: 60rpx;
   color:white;
+  margin-bottom: 10%;
 }
+.form{
+  width:100%;
+}
+.form input{
+  background-color: #1B1647;
+  margin-bottom: 5%;
+  box-shadow: 0 0 10px #B394FF;
+  border-radius: 5px;
+  height: 4vh;
+  padding: 2vh 1vh 1vh 1vh;
+}
+
 
 
