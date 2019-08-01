@@ -14,7 +14,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    console.log('userId', app.globalData.userId)
+    console.log('newGame-userId', app.globalData.userId)
   },
 
   submitForm: function (e) {
@@ -24,7 +24,6 @@ Page({
     let edition = e.detail.value.edition;
     // need a user_id in order to make the post request
     let user_id = app.globalData.userId;
-    console.log(22, user_id)
 
     let game = {game: { name: name, description: description, game: gameType, edition: edition, user_id: user_id }};
 
