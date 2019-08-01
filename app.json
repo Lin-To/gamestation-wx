@@ -6,7 +6,9 @@
     "pages/request/request",
     "pages/profile/profile",
     "pages/show/show",
-    "pages/newGame/newGame"
+    "pages/newGame/newGame",
+    "pages/reservation/reservation",
+    "pages/wishList/wishList"
   ],
   "window": {
     "backgroundTextStyle": "light",
