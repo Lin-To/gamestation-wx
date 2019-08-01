@@ -15,7 +15,7 @@ Page({
    */
   onLoad: function (options) {
     let id = app.globalData.userId;
-    //console.log('userId', id);
+    console.log('userId', id);
     let page = this;
     wx.request({
       url: `https://gamestation.herokuapp.com/api/v1/users/${id}`,
