@@ -1,0 +1,7 @@
+<!--pages/rentals/rentals.wxml-->
+<text>My Stuff</text>
+<view class="card" wx:for="{{games}}" wx:for-item="game" data-item="{{game}}">
+  <view>{{game.name}}</view>
+  <view>{{game.description}}</view>
+  <view>{{game.edition}}</view>
+</view>

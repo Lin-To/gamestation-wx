@@ -47,7 +47,7 @@
     <view class ="content">
       <view class="card-h2">{{game.name}}</view>
       <view class="card-p">Category:{{game.description}}</view>
-      <view class="card-p">Edition:</view>
+      <view class="card-p">Edition:{{game.edition}}</view>
       </view>
       <view class="card-footer-p">Distance:</view>
     </view>
