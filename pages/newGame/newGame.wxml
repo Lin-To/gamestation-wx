@@ -1,5 +1,6 @@
 <!--pages/newGame/newGame.wxml-->
-<text>Add a Game</text>
+<view class="container">
+<view class="h1">Add a Game</view>
 <form bindsubmit='submitForm'>
   <input name='name' placeholder='input name here'></input>
   <input name='description' placeholder='input description here'></input>
@@ -16,3 +17,4 @@
   <button form-type='submit'>Submit</button>
   <button form-type='reset'>reset</button>
 </form>
+</view>
