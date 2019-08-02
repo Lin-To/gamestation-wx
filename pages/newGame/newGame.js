@@ -7,7 +7,73 @@ Page({
    * Page initial data
    */
   data: {
-    game_select: null
+    game_select: null,
+
+    platform: [
+      'Xbox One',
+      'PlayStation 3',
+      'PlayStation 4',
+      'PlayStation Portable',
+      'PC',
+      'Nintendo DS',
+      'Nintendo 3DS',
+      'Nintendo 64',
+      'Xbox 360',
+      'Nintendo Entertainment System',
+      'Nintendo Switch'
+    ],
+    platformArray: [
+      {
+        id: 0,
+        name: 'Xbox One'
+      },
+      {
+        id: 1,
+        name: 'PlayStation 3'
+      },
+      {
+        id: 2,
+        name: 'PlayStation 4'
+      },
+      {
+        id: 3,
+        name: 'PlayStation Portable'
+      },
+      {
+        id: 4,
+        name: 'PC'
+      },
+      {
+        id: 5,
+        name: 'Nintendo DS'
+      },
+      {
+        id: 6,
+        name: 'Nintendo 3DS'
+      },
+      {
+        id: 7,
+        name: 'Nintendo 64'
+      },
+      {
+        id: 8,
+        name: 'Xbox 360'
+      },
+      {
+        id: 9,
+        name: 'Nintendo Entertainment System'
+      },
+      {
+        id: 10,
+        name: 'Nintendo Switch'
+      },
+    ],
+    index: 0,
+
+    items: [
+      { name: 'Game', value: 'Game' },
+      { name: 'Console', value: 'Console' },
+    ]
   },
 
   gameOrConsole: function (e){
@@ -97,7 +163,11 @@ Page({
   onShareAppMessage: function () {
 
   },
-  console: function(){
 
-  }
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
 })

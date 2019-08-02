@@ -29,8 +29,6 @@
 		"hidedInDevtools": []
 	},
 	"scripts": {},
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -48,7 +46,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 8,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -108,14 +106,15 @@
 				},
 				{
 					"id": -1,
-					"name": "wish list",
-					"pathName": "pages/wishList/wishList",
-          "query": "",
-					"scene": null
-         },
-					"name": "Reservation",
-					"pathName": "pages/reservation/reservation",
+					"name": "List-game",
+					"pathName": "pages/newGame/newGame",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "List Game",
+					"pathName": "pages/list-game/list-game",
 					"scene": null
 				}
 			]
