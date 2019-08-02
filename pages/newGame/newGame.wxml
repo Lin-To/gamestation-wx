@@ -5,19 +5,23 @@
 <form bindsubmit='submitForm' class="form">
   <label for="name">Name:</label>
   <input name='name' placeholder='What are you renting?'></input>
-  <label for="name">Description</label>
-  <input name='description' placeholder='input description here'></input>
+  <label for="name">Description:</label>
+  <input name='description' placeholder='Add a description'></input>
 
   <view class="">
+  <label for="game">Is it a game or console that you're renting out?</label>
     <radio-group name="game">
       <label><radio value="game"/>Game</label>
       <label><radio value="console"/>Console</label>
     </radio-group>
   </view>
 
-  <input name='edition' placeholder='Type | Edition'></input>
+  <label for="edition">Choose a console type for your game</label>
+  <input name='edition'></input>
   
+  <view class='form-submit-buttons'>
   <button form-type='submit'>Submit</button>
   <button form-type='reset'>reset</button>
+  </view>
 </form>
 </view>
