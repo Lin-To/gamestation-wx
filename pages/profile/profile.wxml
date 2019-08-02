@@ -41,6 +41,14 @@
         <text>></text>
       </view>
     </view>
+    <view class="tabs" bindtap="goToBookings">
+      <view class="texts">
+        <text>My bookings</text>
+      </view>
+      <view class="button">
+        <text>></text>
+      </view>
+    </view>
     <view class="tabs last-tab">
       <view class="texts">
         <text>Wishlist</text>

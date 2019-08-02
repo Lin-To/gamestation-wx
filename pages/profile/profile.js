@@ -80,6 +80,12 @@ Page({
     })
   },
 
+  goToBookings: function (event) {
+    wx.navigateTo({
+      url: '../reservation/reservation'
+    })
+  },
+
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
