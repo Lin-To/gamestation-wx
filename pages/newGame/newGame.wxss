@@ -12,19 +12,60 @@
 .h1{
   font-size: 60rpx;
   color:white;
-  margin-bottom: 10%;
+  margin-bottom: 50rpx;
 }
-.form{
+
+.form {
   width:100%;
 }
+
+.form label{
+  color: white;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+
 .form input{
   background-color: #1B1647;
-  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 7%;
   box-shadow: 0 0 10px #B394FF;
   border-radius: 5px;
   height: 4vh;
-  padding: 2vh 1vh 1vh 1vh;
+  padding: 1vh 1vh 1vh 1vh;
 }
+
+.form radio-group{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.form radio{
+  margin-right: 10rpx;
+}
+
+.form radio-group label{
+  margin-right: 30rpx;
+  font-weight:400;
+}
+
+.form-buttons{
+  margin-top: 20%;
+}
+
+.form-submit-buttons {
+  margin-top: 20%;
+}
+
+.form-submit-buttons button{
+  margin-bottom: 3%;
+}
+
+
+
+
+
 
 
 
