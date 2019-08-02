@@ -24,17 +24,17 @@
       <view class="profile">
         <image class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" />
 
-        <view class="card-h2">Owner:{{game.name}}</view>
+        <view class="card-h2">Jennifer Westbrook wants to borrow</view>
       </view>
       <view class="card-product">
         <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" mode="aspectFill" />
         <view data-id="{{game.id}}" class="card-product-infos" bindtap="goToShow">
           <view class="content">
-            <view class="card-h2">Name: {{game.name}}</view>
-            <view class="card-p">Category:{{game.description}}</view>
-            <view class="card-p">Edition:{{game.edition}}</view>
+            <view class="card-h2">Overcooked</view>
+            <view class="card-p">Category: Game</view>
+            <view class="card-p">Edition: Nintendo Switch</view>
           </view>
-          <view class="card-footer-p">Date:</view>
+          <view class="card-footer-p"><view>From: 2019-08-07</view><view>To: 2019-08-09</view></view>
         </view>
 
         <view>

@@ -27,11 +27,9 @@
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-  
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
-
 	"scripts": {},
 	"condition": {
 		"search": {
@@ -110,20 +108,16 @@
 					"scene": null
 				},
 				{
-
 					"id": -1,
 					"name": "Reservation",
 					"pathName": "pages/reservation/reservation",
-
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-
 					"name": "new game",
 					"pathName": "pages/newGame/newGame",
-
 					"scene": null
 				}
 			]
