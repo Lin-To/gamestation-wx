@@ -21,13 +21,15 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.7",
+	"libVersion": "2.8.0",
 	"appid": "wx3f52b93965ece9e1",
-	"projectname": "gamestation-wx",
-	"cloudfunctionTemplateRoot": "",
+	"projectname": "miniprogram-1",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"scripts": {},
 	"condition": {
 		"search": {
@@ -43,6 +45,7 @@
 			"list": []
 		},
 		"game": {
+			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
@@ -50,49 +53,35 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "Home Page",
+					"name": "home",
 					"pathName": "pages/home/home",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": 2,
-					"name": "pages/search/search",
-					"pathName": "pages/search/search",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/request/request",
-					"pathName": "pages/request/request",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/request/request",
-					"pathName": "pages/request/request",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "Show",
-					"pathName": "pages/show/show",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "Profile",
+					"id": 1,
+					"name": "pages/profile/profile",
 					"pathName": "pages/profile/profile",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "new game",
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "list-game",
+					"pathName": "pages/list-game/list-game",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "newGame",
 					"pathName": "pages/newGame/newGame",
 					"query": "",
 					"scene": null
@@ -105,9 +94,24 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "List-game",
-					"pathName": "pages/newGame/newGame",
+					"id": 6,
+					"name": "request",
+					"pathName": "pages/request/erequest",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "reservation",
+					"pathName": "pages/reservation/reservation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "show",
+					"pathName": "pages/show/show",
+
 					"query": "",
 					"scene": null
 				},
