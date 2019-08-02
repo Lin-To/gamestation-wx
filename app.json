@@ -8,7 +8,9 @@
     "pages/show/show",
     "pages/newGame/newGame",
     "pages/reservation/reservation",
-    "pages/wishList/wishList"
+    "pages/rentals/rentals",
+    "pages/wishList/wishList",
+    "pages/all_my_games/all_my_games"
   ],
   "window": {
     "backgroundTextStyle": "light",

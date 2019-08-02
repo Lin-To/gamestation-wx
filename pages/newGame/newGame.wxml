@@ -1,4 +1,3 @@
-
 <!--pages/newGame/newGame.wxml-->
 <view class="container">
 <view class="h1">Rent a Game/Console</view>
@@ -15,6 +14,7 @@
       <label><radio value="console"/>Console</label>
     </radio-group>
   </view>
+
 
 <view class="edition-container" wx:if="{{game_select == 'game'}}">
   <label for="edition">Your game is compatible with:</label>

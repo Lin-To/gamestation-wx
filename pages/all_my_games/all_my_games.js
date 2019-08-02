@@ -1,6 +1,6 @@
-// pages/rentals/rentals.js
 const app = getApp();
 
+// pages/all_my_games/all_my_games.js
 Page({
 
   /**
@@ -14,15 +14,15 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    let id = app.globalData.userId;
-    console.log('userId', id);
-    let page = this;
+    let page = this
+    let user_id = app.globalData.userId;
     wx.request({
-      url: `https://gamestation.herokuapp.com/api/v1/users/${id}`,
+      // url: 'http://localhost:3000/api/v1/games',
+      url: `https://gamestation.herokuapp.com/api/v1/users/${user_id}`,
       success: function (res) {
         console.log(res)
-        page.setData({bookings: res.data.bookings});
-      },
+        page.setData({ games: res.data.games })
+      }
     })
   },
 

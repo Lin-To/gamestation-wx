@@ -9,32 +9,41 @@
 
   <view class="cards-container">
 
-    <view class="big-card">
+
+    <view class="big-card" wx:for="{{bookings}}" wx:for-item="booking" data-item="{{booking}}">
       <view class="profile">
         <image class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" />
 
-        <view class="card-h2">{{rentee}}Name</view>
+        <view class="card-h2">{{booking.booking_user}}</view>
       </view>
       <view class="card-product">
         <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" mode="aspectFill" />
-        <view data-id="{{game.id}}" class="card-product-infos" bindtap="goToShow">
+        <view data-id="{{booking.id}}" class="card-product-infos" bindtap="goToShow">
           <view class="content">
-            <view class="card-h2">Name: {{game.name}}</view>
-            <view class="card-p">Category:{{game.description}}</view>
-            <view class="card-p">Edition:{{game.edition}}</view>
+            <view class="card-h2">Name: {{booking.booking_game}}</view>
           </view>
-          <view class="card-footer-p">Date:</view>
+          <view class="card-footer-p">
+            <view>From:{{booking.start_date}}</view>
+            <view>To: {{booking.end_date}}</view>
+          </view>
         </view>
-
         <view>
 
         </view>
       </view>
       <view class="response">
-            <view class="accept-tab">
-              <text class="p">request status</text>
-            </view>
+        <view class="accept-tab">
+          <view class="" wx:if="{{booking.status == 0}}">
+            <view class="p">Pending Request</view>
           </view>
+          <view class="" wx:if="{{booking.status == -1}}">
+            <view class="p">Request Declined</view>
+          </view>
+          <view class="" wx:if="{{booking.status == 1}}">
+            <view class="p">Request Accepted</view>
+          </view>
+        </view>
+      </view>
     </view>
   </view>
 </view>
