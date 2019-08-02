@@ -30,6 +30,7 @@
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"scripts": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -48,7 +49,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 9,
 			"list": [
 				{
 					"id": -1,
@@ -80,7 +81,7 @@
 				},
 				{
 					"id": 4,
-					"name": "newGmae",
+					"name": "newGame",
 					"pathName": "pages/newGame/newGame",
 					"query": "",
 					"scene": null
@@ -110,7 +111,14 @@
 					"id": 8,
 					"name": "show",
 					"pathName": "pages/show/show",
+
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "List Game",
+					"pathName": "pages/list-game/list-game",
 					"scene": null
 				}
 			]
