@@ -25,6 +25,30 @@ Page({
     ],
   },
 
+  decline: function (e) {
+    let page = this;
+    
+    // id of the person making the request?
+    // send post request to api
+    // wx.request({
+    //   url: `https://gamestation.herokuapp.com/api/v1/users/${user_id}/bookings`,
+    //   method: 'PUT',
+    //   data: booking,
+    //   success() {
+    //     console.log('succeed');
+    //     // wx.reLaunch({
+    //     //   url: '/pages/home/home'
+    //     // });
+    //     wx.redirectTo({
+    //       url: '../rentals/rentals'
+    //     });
+    //   }
+    // });
+  },
+  accept: function (e) {
+
+  },
+
   /**
    * Lifecycle function--Called when page load
    */
@@ -33,21 +57,15 @@ Page({
     // console.log(app)
     const userId = app.globalData.userId
     // console.log(userId)
-    
 
     wx.request({
-      url: `https://gamestation.herokuapp.com/api/v1/users/46`,
-      method: 'GET',
-      success(res) {
-        console.log(333, res)
-        let data = res.data
-        page.setData ({
-          rentee: data.name
-        })
-
-
-    }
-  })
+      url: `https://gamestation.herokuapp.com/api/v1/users/${id}`,
+      success: function (res) {
+        console.log(res)
+        page.setData({ requests: res.data.requests });
+      },
+    })
+   
   },
 
 

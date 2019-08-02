@@ -12,7 +12,7 @@
 
     <view class="big-card" wx:for="{{bookings}}" wx:for-item="booking" data-item="{{booking}}">
       <view class="profile">
-        <image class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" />
+        <!-- <image class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" /> -->
 
         <view class="card-h2">{{booking.booking_user}}</view>
       </view>
