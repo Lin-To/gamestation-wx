@@ -1,5 +1,0 @@
-{
-  "usingComponents": {
-    "van-datetime-picker": "/dist/datetime-picker/index"
-  }
-}
