@@ -28,6 +28,7 @@
 
 .form input{
   background-color: #1B1647;
+  color:white;
   margin-top: 5%;
   margin-bottom: 7%;
   box-shadow: 0 0 10px #B394FF;
@@ -54,12 +55,17 @@
   margin-top: 20%;
 }
 
-.form-submit-buttons {
+.form-submit-container {
   margin-top: 20%;
 }
 
-.form-submit-buttons button{
+.form-submit-container button {
   margin-bottom: 3%;
+}
+
+.form-submit-button-active {
+  background: #7CF2F2;
+  color:white;
 }
 
 

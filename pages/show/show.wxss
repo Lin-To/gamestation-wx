@@ -30,7 +30,6 @@ border-radius: 10rpx;
 
 .card-product {
   overflow: hidden;
-  height: 12vh;
   background: #121530;
   box-shadow: 0 0 15px #632DF5;
   display: flex;

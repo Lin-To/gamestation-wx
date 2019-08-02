@@ -16,12 +16,12 @@
     </radio-group>
   </view>
 
-<view class="edition_container" wx:if="{{game_select == 'game'}}">
+<view class="edition-container" wx:if="{{game_select == 'game'}}">
   <label for="edition">Choose a console type for your game</label>
   <input name='edition'></input>
 </view>
-  <view class='form-submit-buttons'>
-  <button form-type='submit'>Submit</button>
+  <view class='form-submit-container'>
+  <button form-type='submit' hover-class="form-submit-button-active ">Submit</button>
   <button form-type='reset'>reset</button>
   </view>
 </form>

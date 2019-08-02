@@ -131,7 +131,8 @@
   justify-content: space-between;
   height: 75%;
   position: relative;
-  padding-left: 30rpx;
+  padding: 0rpx 30rpx;
+  margin-bottom: 30rpx;
   flex-basis:60%;
 
 }
