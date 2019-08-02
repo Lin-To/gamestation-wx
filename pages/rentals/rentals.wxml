@@ -27,7 +27,6 @@
             <view>To: {{booking.end_date}}</view>
           </view>
         </view>
-
         <view>
 
         </view>
@@ -40,7 +39,6 @@
           <view class="" wx:if="{{booking.status == -1}}">
             <view class="p">Request Declined</view>
           </view>
-
           <view class="" wx:if="{{booking.status == 1}}">
             <view class="p">Request Accepted</view>
           </view>
