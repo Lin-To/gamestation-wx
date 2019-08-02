@@ -54,7 +54,7 @@
   </view> -->
 
     <view class="section">
-      <text>Booking Start Date:\n</text>
+      <text>Booking Start Date\n</text>
       <view class="sub-section date-picker">
         <picker mode="date" value="{{start_date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindDateStartChange">
           <view class="picker">
@@ -64,7 +64,7 @@
       </view>
     </view>
     <view class="section">
-      <text>Booking End Date:\n</text>
+      <text>Booking End Date\n</text>
       <view class="sub-section date-picker">
         <picker mode="date" value="{{end_date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindDateEndChange">
           <view class="picker">

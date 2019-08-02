@@ -36,8 +36,10 @@ Page({
     let start_date = this.data.start_date;
     let end_date = this.data.end_date;
     let game_id = this.data.game_id;
-    // user_id is the rentee's user_id
+
+    //!IMPORTANT! user_id is the rentee's user_id
     let user_id = app.globalData.userId;
+
     console.log('current user id: ', user_id);
     let booking = {booking:{
       start_date: start_date,
