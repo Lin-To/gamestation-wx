@@ -23,13 +23,15 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.8.0",
 	"appid": "wx3f52b93965ece9e1",
-	"projectname": "miniprogram-1",
+	"projectname": "gamestation-wx",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
+  
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+
 	"scripts": {},
 	"condition": {
 		"search": {
@@ -108,17 +110,20 @@
 					"scene": null
 				},
 				{
-					"id": 8,
-					"name": "show",
-					"pathName": "pages/show/show",
+
+					"id": -1,
+					"name": "Reservation",
+					"pathName": "pages/reservation/reservation",
 
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "List Game",
-					"pathName": "pages/list-game/list-game",
+
+					"name": "new game",
+					"pathName": "pages/newGame/newGame",
+
 					"scene": null
 				}
 			]

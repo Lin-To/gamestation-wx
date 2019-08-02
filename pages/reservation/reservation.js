@@ -1,5 +1,8 @@
 // pages/profile/profile.js
 
+const app = getApp()
+
+
 Page({
 
   /**
@@ -26,8 +29,28 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    let page = this
+    // console.log(app)
+    const userId = app.globalData.userId
+    // console.log(userId)
 
+    wx.request({
+      url: `https://gamestation.herokuapp.com/api/v1/users/46`,
+      method: 'GET',
+      success(res) {
+        console.log(333, res)
+        let data = res.data
+        page.setData ({
+          games: data.games,
+          bookings: data.bookings
+          
+        })
+
+    }
+  })
   },
+
+
 
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -76,5 +99,24 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  // getUserInfo: function (e) {
+  //   let page = this
+  //   console.log(e)
+    // app.globalData.userInfo = e.detail.userInfo
+    // console.log('globaldata', app.globalData)
+
+    // 
+    // page.setData({
+    //   userInfo: e.detail.userInfo,
+    //   name: e.detail.userInfo.nickName,
+    //   avatar: e.detail.userInfo.avatarUrl
+
+    // })
+
+    // let name = e.detail.userInfo.nickName
+    // let user = {
+    //   name: name
+
 })
