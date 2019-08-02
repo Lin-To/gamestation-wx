@@ -27,11 +27,9 @@
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-  
 	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
-
 	"scripts": {},
 	"condition": {
 		"search": {
@@ -51,7 +49,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 12,
 			"list": [
 				{
 					"id": -1,
@@ -110,20 +108,37 @@
 					"scene": null
 				},
 				{
-
 					"id": -1,
 					"name": "Reservation",
 					"pathName": "pages/reservation/reservation",
-
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-
 					"name": "new game",
 					"pathName": "pages/newGame/newGame",
-
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "profile",
+					"pathName": "pages/profile/profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "rentals",
+					"pathName": "pages/rentals/rentals",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "All My Games",
+					"pathName": "pages/all_my_games/all_my_games",
 					"scene": null
 				}
 			]

@@ -59,7 +59,7 @@ Page({
         //   url: '/pages/home/home'
         // });
         wx.redirectTo({
-          url: '../reservation/reservation'
+          url: '../rentals/rentals'
         });
       }
     });

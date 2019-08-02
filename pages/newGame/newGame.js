@@ -108,7 +108,7 @@ Page({
       data: game,
       success() {
         wx.reLaunch({
-          url: '/pages/home/home'
+          url: '/pages/all_my_games/all_my_games'
         });
       }
     })

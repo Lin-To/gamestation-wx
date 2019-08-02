@@ -16,10 +16,17 @@
         <text class="h1">Hello {{name}}!</text>
       </view>
     </view>
-
-    <view class="tabs">
+<view class="tabs" bindtap="goToAdd">
       <view class="texts">
-        <text>Edit Profile</text>
+        <text>Add a listing</text>
+      </view>
+      <view class="button">
+        <text>></text>
+      </view>
+    </view>
+    <view class="tabs">
+      <view class="texts" bindtap="goToMyGames">
+        <text>View all your listed games</text>
       </view>
       <view class="button">
         <text>></text>
@@ -33,14 +40,7 @@
         <text>></text>
       </view>
     </view>
-    <view class="tabs" bindtap="goToAdd">
-      <view class="texts">
-        <text>Add a listing</text>
-      </view>
-      <view class="button">
-        <text>></text>
-      </view>
-    </view>
+    
     <view class="tabs" bindtap="goToBookings">
       <view class="texts">
         <text>My bookings</text>
