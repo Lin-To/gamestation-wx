@@ -10,7 +10,7 @@ Page({
     formatter(type, value) {
       if (type === 'year') {
         return `${value}年`;
-      } else if (type === 'month') {
+      } else if (type === 'month')
         return `${value}月`;
       }
       return value;

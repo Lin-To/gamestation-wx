@@ -17,8 +17,15 @@
   </view>
 
 <view class="edition-container" wx:if="{{game_select == 'game'}}">
-  <label for="edition">Choose a console type for your game</label>
-  <input name='edition'></input>
+  <label for="edition">Your game is compatible with:</label>
+  <!-- <input name='edition'></input> -->
+  <view class="sub-section date-picker">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{platform}}">
+        <view class="picker">
+          <text class="ph">{{platform[index]}}</text>
+        </view>
+        </picker>
+      </view>
 </view>
   <view class='form-submit-container'>
   <button form-type='submit' hover-class="form-submit-button-active ">Submit</button>
