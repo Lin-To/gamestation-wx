@@ -4,7 +4,7 @@
 .container {
   padding: 30rpx 30rpx ;
   background-color: #0D1420;
-  height: 100vh;
+  height: 125vh;
   align-items:flex-start;
   justify-content: flex-start;
  }
@@ -56,7 +56,7 @@
 }
 
 .form-submit-container {
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .form-submit-container button {
@@ -80,11 +80,19 @@
 
 .edition-container {
   margin-top:7%;
+  margin-bottom: 7%;
 }
 
+.start-date-picker{
+  margin-bottom: 3vh;
+}
 
-
-
+.picker {
+  width: 90vw;
+  height: 3vh;
+  color: white;
+  padding-top: 0.5vh;
+}
 
 
 

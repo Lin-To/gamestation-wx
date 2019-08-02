@@ -27,6 +27,32 @@
         </picker>
       </view>
 </view>
+
+<view class="section">
+      <label>Start Date:\n</label>
+      <view class="sub-section start-date-picker">
+        <picker mode="date" value="{{date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindStartDateChange">
+          <view class="picker">
+            <text class="ph">{{start_date}}</text>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="section">
+      <label>End Date:\n</label>
+      <view class="sub-section">
+        <picker mode="date" value="{{date}}" start="{{currentDate}}" end="2030-08-01" bindchange="bindEndDateChange">
+          <view class="picker">
+            <text class="ph">{{end_date}}</text>
+          </view>
+        </picker>
+      </view>
+    </view>
+
+
+
+
+
   <view class='form-submit-container'>
   <button form-type='submit' hover-class="form-submit-button-active ">Submit</button>
   <button form-type='reset'>reset</button>
