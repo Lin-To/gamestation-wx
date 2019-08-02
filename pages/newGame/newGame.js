@@ -7,7 +7,15 @@ Page({
    * Page initial data
    */
   data: {
+    game_select: null
+  },
 
+  gameOrConsole: function (e){
+    console.log(e.detail.value);
+    let selection = e.detail.value;
+    this.setData({
+      game_select: selection
+    })
   },
 
   /**
@@ -87,6 +95,9 @@ Page({
    * Called when user click on the top right corner to share
    */
   onShareAppMessage: function () {
+
+  },
+  console: function(){
 
   }
 })

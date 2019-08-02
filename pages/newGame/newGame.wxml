@@ -10,15 +10,16 @@
 
   <view class="">
   <label for="game">Is it a game or console that you're renting out?</label>
-    <radio-group name="game">
+    <radio-group name="game" bindchange="gameOrConsole">
       <label><radio value="game"/>Game</label>
       <label><radio value="console"/>Console</label>
     </radio-group>
   </view>
 
+<view class="edition_container" wx:if="{{game_select == 'game'}}">
   <label for="edition">Choose a console type for your game</label>
   <input name='edition'></input>
-  
+</view>
   <view class='form-submit-buttons'>
   <button form-type='submit'>Submit</button>
   <button form-type='reset'>reset</button>
