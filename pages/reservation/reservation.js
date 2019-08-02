@@ -33,6 +33,7 @@ Page({
     // console.log(app)
     const userId = app.globalData.userId
     // console.log(userId)
+    
 
     wx.request({
       url: `https://gamestation.herokuapp.com/api/v1/users/46`,
@@ -41,9 +42,7 @@ Page({
         console.log(333, res)
         let data = res.data
         page.setData ({
-          games: data.games,
-          bookings: data.bookings
-          
+          rentee: data.name
         })
 
     }

@@ -1,7 +1,40 @@
 <!--pages/rentals/rentals.wxml-->
-<text>My Stuff</text>
-<view class="card" wx:for="{{games}}" wx:for-item="game" data-item="{{game}}">
-  <view>name: {{game.name}}</view>
-  <view>description: {{game.description}}</view>
-  <view>{{game.edition}}</view>
+<view class="page">
+
+  <view class="header">
+    <text class="h1">
+      Your Rentals:
+    </text>
+  </view>
+
+  <view class="cards-container">
+
+    <view class="big-card">
+      <view class="profile">
+        <image class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" />
+
+        <view class="card-h2">{{rentee}}Name</view>
+      </view>
+      <view class="card-product">
+        <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" mode="aspectFill" />
+        <view data-id="{{game.id}}" class="card-product-infos" bindtap="goToShow">
+          <view class="content">
+            <view class="card-h2">Name: {{game.name}}</view>
+            <view class="card-p">Category:{{game.description}}</view>
+            <view class="card-p">Edition:{{game.edition}}</view>
+          </view>
+          <view class="card-footer-p">Date:</view>
+        </view>
+
+        <view>
+
+        </view>
+      </view>
+      <view class="response">
+            <view class="accept-tab">
+              <text class="p">request status</text>
+            </view>
+          </view>
+    </view>
+  </view>
 </view>

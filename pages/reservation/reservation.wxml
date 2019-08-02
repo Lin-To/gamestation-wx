@@ -2,21 +2,9 @@
 
   <view class="header">
     <text class="h1">
-      Reservations
+      Your Reservation Requests:
     </text>
   </view>
-
-  <!-- <view class="sliding-images">
-    <swiper class="slider" display-multiple-items="6">
-      <block wx:for="{{months}}">
-        <swiper-item class="swipe-block">
-          <view class="sliding-months">
-            <text class="p">{{item}}</text>
-          </view>
-        </swiper-item>
-      </block>
-    </swiper>
-  </view> -->
 
   <view class="cards-container">
 
@@ -24,7 +12,7 @@
       <view class="profile">
         <image class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" />
 
-        <view class="card-h2">Owner:{{game.name}}</view>
+        <view class="card-h2">{{rentee}} wants to borrow your game</view>
       </view>
       <view class="card-product">
         <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" mode="aspectFill" />
