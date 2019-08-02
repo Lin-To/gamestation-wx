@@ -77,7 +77,7 @@
 <!-- booking button -->
      <view class="section submit-section">
       <view class="sub-section submit-button">
-        <text>Book</text>
+        <text bindtap="submitBooking">Book</text>
       </view>
     </view>
  </form>

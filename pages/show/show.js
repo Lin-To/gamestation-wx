@@ -31,6 +31,38 @@ Page({
     })
   }, 
   
+  submitBooking: function (e) {
+    let page = this;
+    let start_date = this.data.start_date;
+    let end_date = this.data.end_date;
+    let game_id = this.data.game_id;
+    // user_id is the rentee's user_id
+    let user_id = app.globalData.userId;
+    console.log('current user id: ', user_id);
+    let booking = {booking:{
+      start_date: start_date,
+      end_date: end_date,
+      game_id: game_id,
+      user_id: user_id,
+      status: 0
+    }};
+    // send post request to api
+    wx.request({
+      url: `https://gamestation.herokuapp.com/api/v1/users/${user_id}/bookings`,
+      method: 'POST',
+      data: booking,
+      success() {
+        console.log('succeed');
+        // wx.reLaunch({
+        //   url: '/pages/home/home'
+        // });
+        wx.redirectTo({
+          url: '../reservation/reservation'
+        });
+      }
+    });
+  },
+
   /**
    * Lifecycle function--Called when page load
    */
@@ -45,13 +77,16 @@ Page({
         const game_description = res.data.description;
         const user = res.data.user.name;
         const avatar = res.data.user.avatar;
+        const game_id = res.data.id;
+        const user_id = res.data.user_id;
         page.setData({
           game_name: game_name,
           game_description: game_description,
           user: user,
-          avatar: avatar
-
-           });
+          avatar: avatar,
+          game_id: game_id,
+          user_id: user_id
+        });
         wx.hideToast();
       }
     })
