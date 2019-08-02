@@ -33,12 +33,19 @@ Page({
     // console.log(app)
     const userId = app.globalData.userId
     // console.log(userId)
+    
 
     wx.request({
-      url: `https://gamestation.herokuapp.com/api/v1/users/${userID}`,
-      success: function (res) {
-        console.log(res)
-        page.setData({ games: res.data.games });
+      url: `https://gamestation.herokuapp.com/api/v1/users/46`,
+      method: 'GET',
+      success(res) {
+        console.log(333, res)
+        let data = res.data
+        page.setData ({
+          rentee: data.name
+        })
+
+
     }
   })
   },

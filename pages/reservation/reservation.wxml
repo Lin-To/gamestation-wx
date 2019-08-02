@@ -2,21 +2,9 @@
 
   <view class="header">
     <text class="h1">
-      Reservations
+      Your Reservation Requests:
     </text>
   </view>
-
-  <!-- <view class="sliding-images">
-    <swiper class="slider" display-multiple-items="6">
-      <block wx:for="{{months}}">
-        <swiper-item class="swipe-block">
-          <view class="sliding-months">
-            <text class="p">{{item}}</text>
-          </view>
-        </swiper-item>
-      </block>
-    </swiper>
-  </view> -->
 
   <view class="cards-container">
 

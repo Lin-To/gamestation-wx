@@ -86,6 +86,12 @@ Page({
     })
   },
 
+  goToMyGames: function (event) {
+    wx.navigateTo({
+      url: '../all_my_games/all_my_games'
+    })
+  },
+
   getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo

@@ -1,7 +1,49 @@
 <!--pages/rentals/rentals.wxml-->
-<text>My Stuff</text>
-<view class="card" wx:for="{{games}}" wx:for-item="game" data-item="{{game}}">
-  <view>name: {{game.name}}</view>
-  <view>description: {{game.description}}</view>
-  <view>{{game.edition}}</view>
+<view class="page">
+
+  <view class="header">
+    <text class="h1">
+      Your Rentals:
+    </text>
+  </view>
+
+  <view class="cards-container">
+
+
+    <view class="big-card" wx:for="{{bookings}}" wx:for-item="booking" data-item="{{booking}}">
+      <view class="profile">
+        <image class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" />
+
+        <view class="card-h2">{{booking.booking_user}}</view>
+      </view>
+      <view class="card-product">
+        <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" mode="aspectFill" />
+        <view data-id="{{booking.id}}" class="card-product-infos" bindtap="goToShow">
+          <view class="content">
+            <view class="card-h2">Name: {{booking.booking_game}}</view>
+          </view>
+          <view class="card-footer-p">
+            <view>From:{{booking.start_date}}</view>
+            <view>To: {{booking.end_date}}</view>
+          </view>
+        </view>
+        <view>
+
+        </view>
+      </view>
+      <view class="response">
+        <view class="accept-tab">
+          <view class="" wx:if="{{booking.status == 0}}">
+            <view class="p">Pending Request</view>
+          </view>
+          <view class="" wx:if="{{booking.status == -1}}">
+            <view class="p">Request Declined</view>
+          </view>
+          <view class="" wx:if="{{booking.status == 1}}">
+            <view class="p">Request Accepted</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
