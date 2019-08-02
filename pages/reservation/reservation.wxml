@@ -1,12 +1,12 @@
 <view class="page">
 
   <view class="header">
-    <text class="h2">
+    <text class="h1">
       Reservations
     </text>
   </view>
 
-  <view class="sliding-images">
+  <!-- <view class="sliding-images">
     <swiper class="slider" display-multiple-items="6">
       <block wx:for="{{months}}">
         <swiper-item class="swipe-block">
@@ -16,33 +16,39 @@
         </swiper-item>
       </block>
     </swiper>
-  </view>
+  </view> -->
 
   <view class="cards-container">
 
-    <view class="card">
+    <view class="big-card">
+      <view class="profile">
+        <image class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" />
 
-      <view class="user">
-        <image />
+        <view class="card-h2">Owner:{{game.name}}</view>
       </view>
+      <view class="card-product">
+        <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" mode="aspectFill" />
+        <view data-id="{{game.id}}" class="card-product-infos" bindtap="goToShow">
+          <view class="content">
+            <view class="card-h2">Name: {{game.name}}</view>
+            <view class="card-p">Category:{{game.description}}</view>
+            <view class="card-p">Edition:{{game.edition}}</view>
+          </view>
+          <view class="card-footer-p">Date:</view>
+        </view>
 
-      <view class="item">
+        <view>
+
+        </view>
       </view>
-
       <view class="response">
-        <view class="accept-tab">
-          <text class="p">Accept</text>
-        </view>
-
-        <view class="reject-tab">
-          <text class="p">Decline</text>
-        </view>
-      </view>
-
+            <view class="accept-tab">
+              <text class="p">Accept</text>
+            </view>
+            <view class="reject-tab">
+              <text class="p">Decline</text>
+            </view>
+          </view>
     </view>
-
   </view>
-
-
-
 </view>
