@@ -8,6 +8,7 @@ Page({
    */
   data: {
     game_select: null,
+    currentDate: new Date().getTime(),
 
     platform: [
       'Xbox One',
@@ -76,6 +77,19 @@ Page({
     ]
   },
 
+  bindStartDateChange: function(e) {
+    console.log('picker send selection modified. The carry value is ', e.detail.value)
+    this.setData({
+      start_date: e.detail.value
+    })
+  },
+  bindEndDateChange: function(e) {
+    console.log('picker send selection modified. The carry value is ', e.detail.value)
+    this.setData({
+      end_date: e.detail.value
+    })
+  },
+
   gameOrConsole: function (e){
     console.log(e.detail.value);
     let selection = e.detail.value;
@@ -108,7 +122,7 @@ Page({
       data: game,
       success() {
         wx.reLaunch({
-          url: '/pages/all_my_games/all_my_games'
+          url: '/pages/home/home'
         });
       }
     })
@@ -119,7 +133,7 @@ Page({
    * Lifecycle function--Called when page is initially rendered
    */
   onReady: function () {
-    
+
   },
 
   /**
@@ -171,3 +185,4 @@ Page({
     })
   },
 })
+
