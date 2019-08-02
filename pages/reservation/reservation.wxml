@@ -10,7 +10,7 @@
 
     <view class="big-card">
       <view class="profile">
-        <image class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" />
+        <!-- <image class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" /> -->
 
         <view class="card-h2">{{rentee}} wants to borrow your game</view>
       </view>
@@ -31,7 +31,7 @@
       </view>
       <view class="response">
             <view class="accept-tab">
-              <text class="p">Accept</text>
+              <text class="p" bindtap="accept">Accept</text>
             </view>
             <view class="reject-tab">
               <text class="p">Decline</text>
