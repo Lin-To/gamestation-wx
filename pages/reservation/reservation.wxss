@@ -133,3 +133,9 @@ flex-basis: 50%;
   flex-basis: 50%;
 }
 
+.accept-tab-active {
+  background: #7CF2F2;
+  color:white;
+}
+
+

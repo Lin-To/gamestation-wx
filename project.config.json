@@ -139,6 +139,7 @@
 					"id": -1,
 					"name": "All My Games",
 					"pathName": "pages/all_my_games/all_my_games",
+          "query": "",
 					"scene": null
 				}
 			]
